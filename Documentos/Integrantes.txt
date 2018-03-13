@@ -1,0 +1,10 @@
+Equipo: Code Foundation
+
+Pedro Antonio Aguilar Lima		77181425A	Documentación/Modelado y Encargado pruebas	Computadores 2ºC
+José Antonio Ruiz Castelló		74891328Q	Programador y Encargado Pruebas			Software 2ºC
+Alejandro Fuster López			77686527W	Documentación/Modelado y Programador		Informática 2ºC
+Frank Leandro Mejías Cervantes		79389374K	Programador y Encargado pruebas			Informática 2ºC
+Ana Rodríguez-Rabadán Gómez-Pimpollo	71228215K	Jefa de proyecto y Programadora			Informática 2ºC
+Jesús Pulido Vazquez			25728549J	Jefe de proyecto y Documentación/Modelado 	Informática 2ºC
+Artem Rivero Pavlenko			26286805J	Jefe de proyecto y Documentación/Modelado	Software 2ºC
+Andriy Dyachuk				Y2724278B	Jefe de proyecto y Encargado pruebas		Informática 2ºC
