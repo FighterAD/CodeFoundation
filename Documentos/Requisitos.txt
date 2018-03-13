@@ -1,9 +1,10 @@
 (Necesitamos entre 10 y 13 requisitos de alto nivel)
 
 - Registro de usuarios
-- Activar cuenta con un ingreso bancario (depósito para cubrir desperfectos)
-- Identificación del usuario
-- Préstamo de libros
-- Añadir libros para préstamo
+- Activar cuenta con un ingreso bancario (depÃ³sito para cubrir desperfectos)
+- IdentificaciÃ³n del usuario
+- PrÃ©stamo de libros
+- AÃ±adir libros para prÃ©stamo
 - Enviar mensajes privados entre usuarios
 - Buscador de libros
+- Estado de Libros
