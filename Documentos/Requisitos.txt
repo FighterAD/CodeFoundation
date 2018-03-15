@@ -1,5 +1,3 @@
-(Necesitamos entre 10 y 13 requisitos de alto nivel)
-
 - Registro de usuarios
 - Activar cuenta con un ingreso bancario (depósito para cubrir desperfectos)
 - Identificación del usuario
@@ -8,3 +6,7 @@
 - Enviar mensajes privados entre usuarios
 - Buscador de libros
 - Estado de Libros
+- Valoración de usuarios
+- Sistema de contacto (Formulario para enviar algun mensaje a los administradores, para cualquier problema o sugerencia)
+- Aviso de fecha de devolución (Mensaje automático cuando quedan algunos días para devolver el libro)
+- Validación de devolución por parte del usuario que ha prestado el libro. 
