@@ -10,3 +10,4 @@
 - Sistema de contacto (Formulario para enviar algun mensaje a los administradores, para cualquier problema o sugerencia)
 - Aviso de fecha de devolución (Mensaje automático cuando quedan algunos días para devolver el libro)
 - Validación de devolución por parte del usuario que ha prestado el libro. 
+- Ficha con datos del libro. 
