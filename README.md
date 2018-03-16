@@ -5,5 +5,4 @@ Repositorio IIS para el proyecto
 
   Alejandro Fuster López.  
   Pedro Antonio Aguilar Lima.
-  Frank Leandro Mejías Cervantes
-
+  Frank Leandro Mejías Cervantes.
