@@ -52,8 +52,8 @@ Created in 2011, Code is a platform for sharing books among users. Users indicat
 The Code Core development team includes all developers of the Code project. While the Core team is different from the Code Foundation, the Code Foundation works together closely with the Core team and supports them financially. You can use the freenode IRC channel to contact the Core team.
 
 
-**Email:** contact@codefoundation.net
-**Press Inquiries:** press@codefoundation.net
-**Facebook:** [http://www.facebook.com/codefoundation](http://www.facebook.com)
-**Twitter:** [http://www.twitter.com/codefoundation](http://twitter.com)
+**Email:** contact@codefoundation.net 
+**Press Inquiries:** press@codefoundation.net  
+**Facebook:** [http://www.facebook.com/codefoundation](http://www.facebook.com)  
+**Twitter:** [http://www.twitter.com/codefoundation](http://twitter.com)  
 **Office Address:** 111 North Bridge Road # 08-19 Peninsula Plaza, Singapore 179098
