@@ -1,10 +1,4 @@
 # CodeFundation
-Repositorio IIS para el proyecto
 
-## Integrantes
+*En desarrollo*
 
-  Alejandro Fuster López.  
-  Pedro Antonio Aguilar Lima.  
-  Frank Leandro Mejías Cervantes.
-  Andriy Dyachuk.
-  Ana Rodríguez-Rabadán Gómez-Pimpollo
