@@ -1,6 +1,6 @@
 # SCHEDULE  
 
-### Fromación del equipo  
+### Formación del equipo  
 
 * Miembros y roles del equipo (p. ej. Project Managers, Documentation Managers, Developers and Test Managers).  
 
