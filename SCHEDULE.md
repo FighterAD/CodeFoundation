@@ -15,6 +15,7 @@
 
 * Requisitos y restricciones.  
 * Plan de trabajo (incluyendo lo que se implementará y lo que no se implementará).  
+* Plan de evaluación y métricas.  
 
 
 ### Ejecución del proyecto  
@@ -24,6 +25,7 @@
 
 * Documentación y comunicación.
 * Implementación.
+* V&V.  
 
 
 ### Presentación
