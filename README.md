@@ -19,7 +19,7 @@ Created in 2011, Codex is a platform for sharing books among users. Users indica
 
 * [Artem Pavlenko](http://twitter.com)
 * [Ana Rodríguez-Rabadán Gómez-Pimpollo](http://twitter.com)
-* [Jesús Palido Vázquez](http://twitter.com)
+* [Jesús Pulido Vázquez](http://twitter.com)
 * [Andriy Dyachuk](http://twitter.com)
 
 
@@ -28,7 +28,7 @@ Created in 2011, Codex is a platform for sharing books among users. Users indica
 * [Artem Pavlenko](http://twitter.com)
 * [Pedro Antonio Aguilar Lima](http://twitter.com)
 * [Alejandro Fuster López](http://twitter.com)
-* [Jesús Palido Vázquez](http://twitter.com)
+* [Jesús Pulido Vázquez](http://twitter.com)
 
 
 ### Developers
