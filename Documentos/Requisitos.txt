@@ -20,4 +20,4 @@ Requisitos no funcionales:
 - Todos los campos del registro de usuario son obligatorios
 - Si el nombre de usuario y la contraseña del usuario coinciden podra acceder a de la web
 - El usuario puede ver los libros disponibles sin registrarse
-- Para utilizar cualquier servicio de la web es necesario registrado
+- Para utilizar cualquier servicio de la web es necesario registrarse
