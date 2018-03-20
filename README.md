@@ -2,7 +2,7 @@
 
 ### Our Mission
 
-The Code Foundation is a non-profit organization registered in Singapore (Code Foundation Ltd. UEN: 201709179W). Our mission is to advance Codex for the good of society by developing and promoting state-of-the-art code technologies.
+The Code Foundation is a non-profit organization whose primary objectives are education and culture. Our mission is to advance Codex for the good of society by developing and promoting state-of-the-art code technologies.
 
 
 ### What is Codex?
@@ -12,39 +12,39 @@ Created in 2011, Codex is a platform for sharing books among users. Users indica
 
 ### Project Manager
 
-* [Artem Pavlenko](http://twitter.com)
+* [Artem Pavlenko](https://github.com/artempavlenko)
 
 
 ### Project Managers
 
-* [Artem Pavlenko](http://twitter.com)
-* [Ana Rodríguez-Rabadán Gómez-Pimpollo](http://twitter.com)
-* [Jesús Pulido Vázquez](http://twitter.com)
-* [Andriy Dyachuk](http://twitter.com)
+* [Artem Pavlenko](https://github.com/artempavlenko)
+* [Ana Rodríguez-Rabadán Gómez-Pimpollo](https://github.com/Rumanoide)
+* [Jesús Pulido Vázquez](https://github.com/jpv111)
+* [Andriy Dyachuk](https://github.com/FighterAD)
 
 
 ### Documentation Managers
 
-* [Artem Pavlenko](http://twitter.com)
-* [Pedro Antonio Aguilar Lima](http://twitter.com)
-* [Alejandro Fuster López](http://twitter.com)
-* [Jesús Pulido Vázquez](http://twitter.com)
+* [Artem Pavlenko](https://github.com/artempavlenko)
+* [Pedro Antonio Aguilar Lima](https://github.com/Pedro-a4)
+* [Alejandro Fuster López](https://github.com/AlejandroFuster)
+* [Jesús Pulido Vázquez](https://github.com/jpv111)
 
 
 ### Developers
 
-* [José Antonio Ruiz Castelló](http://twitter.com)
-* [Alejandro Fuster López](http://twitter.com)
-* [Frank Leandro Mejías Cervantes](http://twitter.com)
-* [Ana Rodríguez-Rabadán Gómez-Pimpollo](http://twitter.com)
+* [José Antonio Ruiz Castelló](https://github.com/kilgarok)
+* [Alejandro Fuster López](https://github.com/AlejandroFuster)
+* [Frank Leandro Mejías Cervantes](https://github.com/Black-MOAC)
+* [Ana Rodríguez-Rabadán Gómez-Pimpollo](https://github.com/Rumanoide)
 
 
 ### Test Managers
 
-* [Pedro Antonio Aguilar Lima](http://twitter.com)
-* [José Antonio Ruiz Castelló](http://twitter.com)
-* [Frank Leandro Mejías Cervantes](http://twitter.com)
-* [Andriy Dyachuk](http://twitter.com)
+* [Pedro Antonio Aguilar Lima](https://github.com/Pedro-a4)
+* [José Antonio Ruiz Castelló](https://github.com/kilgarok)
+* [Frank Leandro Mejías Cervantes](https://github.com/Black-MOAC)
+* [Andriy Dyachuk](https://github.com/FighterAD)
 
 
 ### Codex Development Team
@@ -56,4 +56,3 @@ The Codex Core development team includes all developers of the Codex project. Wh
 **Press Inquiries:** press@codefoundation.net  
 **Facebook:** [http://www.facebook.com/codefoundation](http://www.facebook.com)  
 **Twitter:** [http://www.twitter.com/codefoundation](http://twitter.com)  
-**Office Address:** 111 North Bridge Road # 08-19 Peninsula Plaza, Singapore 179098
