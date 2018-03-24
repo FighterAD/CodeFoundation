@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2018-03-05" view-index="0" gantt-divider-location="446" resource-divider-location="300" version="2.8.6" locale="es_ES">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Nombre" width="231" order="0"/>
+        <field id="tpd4" name="Fecha de inicio" width="106" order="1"/>
+        <field id="tpd5" name="Fecha de fin" width="105" order="2"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nombre" width="210" order="0"/>
+        <field id="1" name="Función" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Finalizar requisitos" color="#8cb6ce" meeting="false" start="2018-03-26" duration="5" complete="0" thirdDate="2018-03-26" thirdDate-constraint="0" expand="true"/>
+        <task id="2" name="Casos de uso y empezar a programar" meeting="false" start="2018-04-02" duration="5" complete="0" expand="true"/>
+        <task id="4" name="Diagrama de clase y empezar Mockito" meeting="false" start="2018-04-09" duration="5" complete="0" expand="true"/>
+        <task id="7" name="Diagrama de secuencia" meeting="false" start="2018-04-16" duration="5" complete="0" expand="true"/>
+        <task id="9" name="Pruebas con jUnit" meeting="false" start="2018-04-23" duration="5" complete="0" expand="true"/>
+        <task id="13" name="Testing" meeting="false" start="2018-04-30" duration="5" complete="0" expand="true"/>
+        <task id="14" name="Mocking" meeting="false" start="2018-05-07" duration="5" complete="0" expand="true"/>
+        <task id="16" name="Desarrollo guiado por pruebas" meeting="false" start="2018-05-14" duration="5" complete="0" expand="true"/>
+        <task id="18" name="Empezar presentación" meeting="false" start="2018-05-21" duration="5" complete="0" expand="true"/>
+        <task id="20" name="Terminar presentación" meeting="false" start="2018-05-28" duration="5" complete="0" expand="true"/>
+        <task id="21" name="Presentar el proyecto" meeting="false" start="2018-06-04" duration="5" complete="0" expand="true"/>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
