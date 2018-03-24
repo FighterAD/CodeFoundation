@@ -1,58 +1,47 @@
-# ABOUT US
+# SOBRE NOSOTROS
 
-### Our Mission
+### Nuestra misión
 
-The Code Foundation is a non-profit organization whose primary objectives are education and culture. Our mission is to advance Codex for the good of society by developing and promoting state-of-the-art code technologies.
+Code Foundation es una organización sin ánimo de lucro. Nuestra misión es promover Codex por el bien de la sociedad mediante la investigación y desarrollo de código de última generación.
 
 
-### What is Codex?
+### ¿Qué es Codex?
 
-Created in 2011, Codex is a platform for sharing books among users. Users indicate the books they wish to share, creating the offer and the consequent demand, by other users. Codex provides the necessary means for users to have an enriching experience, enjoying the art of reading.
+Creado en 2017, Codex es una plataforma para compartir libros entre los usuarios. Los usuarios indican los libros que desean compartir, creando la oferta y la consecuente demanda, por parte de los usuarios. Codex proporciona los medios necesarios para que los usuarios puedan tener una experiencia enriquecedora, disfrutando del arte de la lectura.
 
 
 ### Project Manager
 
-* [Artem Pavlenko](https://github.com/artempavlenko)
+* Artem Pavlenko
 
 
 ### Project Managers
 
-* [Artem Pavlenko](https://github.com/artempavlenko)
-* [Ana Rodríguez-Rabadán Gómez-Pimpollo](https://github.com/Rumanoide)
-* [Jesús Pulido Vázquez](https://github.com/jpv111)
-* [Andriy Dyachuk](https://github.com/FighterAD)
+* Artem Pavlenko
+* Ana Rodríguez-Rabadán Gómez-Pimpollo
+* Jesús Pulido Vázquez
+* Andriy Dyachuk
 
 
 ### Documentation Managers
 
-* [Artem Pavlenko](https://github.com/artempavlenko)
-* [Pedro Antonio Aguilar Lima](https://github.com/Pedro-a4)
-* [Alejandro Fuster López](https://github.com/AlejandroFuster)
-* [Jesús Pulido Vázquez](https://github.com/jpv111)
+* Artem Pavlenko
+* Pedro Antonio Aguilar Lima
+* Alejandro Fuster López
+* Jesús Pulido Vázquez
 
 
 ### Developers
 
-* [José Antonio Ruiz Castelló](https://github.com/kilgarok)
-* [Alejandro Fuster López](https://github.com/AlejandroFuster)
-* [Frank Leandro Mejías Cervantes](https://github.com/Black-MOAC)
-* [Ana Rodríguez-Rabadán Gómez-Pimpollo](https://github.com/Rumanoide)
+* José Antonio Ruiz Castelló
+* Alejandro Fuster López
+* Frank Leandro Mejías Cervantes
+* Ana Rodríguez-Rabadán Gómez-Pimpollo
 
 
 ### Test Managers
 
-* [Pedro Antonio Aguilar Lima](https://github.com/Pedro-a4)
-* [José Antonio Ruiz Castelló](https://github.com/kilgarok)
-* [Frank Leandro Mejías Cervantes](https://github.com/Black-MOAC)
-* [Andriy Dyachuk](https://github.com/FighterAD)
-
-
-### Codex Development Team
-
-The Codex Core development team includes all developers of the Codex project. While the Core team is different from the Code Foundation, the Code Foundation works together closely with the Core team and supports them financially. You can use the freenode IRC channel to contact the Core team.
-
-
-**Email:** contact@codefoundation.net  
-**Press Inquiries:** press@codefoundation.net  
-**Facebook:** [http://www.facebook.com/codefoundation](http://www.facebook.com)  
-**Twitter:** [http://www.twitter.com/codefoundation](http://twitter.com)  
+* Pedro Antonio Aguilar Lima
+* José Antonio Ruiz Castelló
+* Frank Leandro Mejías Cervantes
+* Andriy Dyachuk
