@@ -1,20 +1,21 @@
 ### Requisitos funcionales
 
-* Registro de usuarios
-* Identificación del usuario
-* Préstamo de libros
-* Tomar histórico del préstamo
-* Añadir libros para préstamo
-* Enviar mensajes privados entre usuarios
-* Buscador de libros
-* Estado de Libros
-* Valoración de usuarios
-* Sistema de contacto (Formulario para enviar algun mensaje a los administradores, para cualquier problema o sugerencia)
-* Aviso de fecha de devolución (Mensaje automático cuando quedan algunos días para devolver el libro)
+- Registro de usuarios
+- Identificación del usuario
+- Préstamo de libros
+- Tomar histórico del préstamo
+- Añadir libros para préstamo
+- Enviar mensajes privados entre usuarios
+- Buscador de libros
+- Registro de búsquedas (Para estadísticas)
+- Estado de Libros
+- Valoración de usuarios
+- Sistema de contacto (Formulario para enviar algun mensaje a los administradores, para cualquier problema o sugerencia)
+- Aviso de fecha de devolución (Mensaje automático cuando quedan algunos días para devolver el libro)
 * Validación de devolución por parte del usuario que ha prestado el libro. 
 * Ficha con datos del libro. 
 * Administrar fichas (Por parte de la administración, poder editar datos incorrectos o eliminar fichas)
-
+* Penalizar usuarios
 
 ### Requisitos no funcionales
 
