@@ -16,6 +16,14 @@
 * Ficha con datos del libro. 
 * Administrar fichas (Por parte de la administración, poder editar datos incorrectos o eliminar fichas)
 * Penalizar usuarios
+* El sistema enviara al usuario un correo con cada modificación o registro nuevo.
+* El administrador puede cancelar un pedido de libro.
+* El campo usuario admite caracteres de todo tipo.
+* La pantalla de registro de pago puede imprimir los datos en pantalla a la impresora.
+* El sistema enviará una alerta al administrador del sistema cuando ocurra alguno de los siguientes eventos: Registro de nueva cuenta, ingreso al sistema por parte del cliente, 2 o más intentos fallidos en el ingreso de la contraseña de usuario y cambio de contraseña de usuario.
+* Los integrantes del grupo de usuarios de gerentes pueden ingresar y aprobar solicitudes, pero no pueden borrarlas.
+* Los integrantes del grupo de usuario de administradores no pueden ingresar o aprobar solicitudes, pero si pueden borrarlas.
+
 
 ### Requisitos no funcionales
 
@@ -24,7 +32,7 @@
 * Es necesario un navegador web
 * Multiplataforma
 * Todos los campos del registro de usuario son obligatorios
-* * Si el nombre de usuario y la contraseña del usuario coinciden podrá acceder a de la web. en caso contrario tendremos un error, y dará opción a recuperar contraseña.
+* Si el nombre de usuario y la contraseña del usuario coinciden podrá acceder a de la web. en caso contrario tendremos un error, y dará opción a recuperar contraseña.
 * El usuario puede ver los libros disponibles sin registrarse.
 * Para utilizar cualquier servicio de la web es necesario registrarse
 * Evitar que dos libros iguales tengan distintas fichas
@@ -34,7 +42,7 @@
 * Si dos libros poseen distinto ISBN y tienen el mismo nombre, ponerlo como el mismo.
 * El sistema debe ser ágil y eficiente en el caso de tener elevada cantidad de usuarios.
 * El sistema debe de poder trabajar con varios usuarios a la vez.
-+* Los datos de la base de datos deben ser actualizados con frecuencia.
+* Los datos de la base de datos deben ser actualizados con frecuencia.
 * Todas las conexiones externas con banco y otras empresas deben estar encifradas.
 * Si detectamos ataques de seguridad el sistema será bloqueado y avisara a un administrador.
 * El tiempo de aprendizaje debe ser menor a 5 min para el usuario.
