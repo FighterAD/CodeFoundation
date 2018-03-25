@@ -25,7 +25,6 @@
 * Lista de libros,modificar (Una lista que contendra libros de interes del usuario)
 * Datos de ubicacion usuario,modificar.
 * Filtro de busqueda de un libro por ubicacion.
-* Tamaño foto de portada del libro < 2 Mb
 * Categoria para libros (tener diferentes categorias para filtrar los libros)
 * Fotos estado fisico del libro (opcional aparece en como galeria scroll en la foto de portada del libro)
 
@@ -40,3 +39,4 @@
 * El usuario puede ver los libros disponibles sin registrarse
 * Para utilizar cualquier servicio de la web es necesario registrarse
 * Evitar que dos libros iguales tengan distintas fichas
+* Tamaño foto de portada del libro < 2 Mb
