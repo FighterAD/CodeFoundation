@@ -16,6 +16,18 @@
 * Ficha con datos del libro. 
 * Administrar fichas (Por parte de la administración, poder editar datos incorrectos o eliminar fichas)
 * Penalizar usuarios
+* Modificar datos de usuario.
+* Opinion sobre el libro(Tiene que aparecer en la ficha del libro en un desplegable).
+* Valoracion de usuario, (un indicador para dar confiaza a otros usuarios).
+* Filtro de spam (tambien filtrar url si se añadieron en opinion del libro).
+* Subir fotos portada del libro, modificar.
+* Fecha de dsiponibilidad (si esta disponible o prestado, si esta prestado la fecha cuando estara disponible).
+* Lista de libros,modificar (Una lista que contendra libros de interes del usuario)
+* Datos de ubicacion usuario,modificar.
+* Filtro de busqueda de un libro por ubicacion.
+* Tamaño foto de portada del libro < 2 Mb
+* Categoria para libros (tener diferentes categorias para filtrar los libros)
+* Fotos estado fisico del libro (opcional aparece en como galeria scroll en la foto de portada del libro)
 
 ### Requisitos no funcionales
 
