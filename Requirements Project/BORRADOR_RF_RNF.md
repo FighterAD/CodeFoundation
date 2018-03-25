@@ -24,7 +24,23 @@
 * Es necesario un navegador web
 * Multiplataforma
 * Todos los campos del registro de usuario son obligatorios
-* Si el nombre de usuario y la contraseña del usuario coinciden podra acceder a de la web
-* El usuario puede ver los libros disponibles sin registrarse
+* * Si el nombre de usuario y la contraseña del usuario coinciden podrá acceder a de la web. en caso contrario tendremos un error, y dará opción a recuperar contraseña.
+* El usuario puede ver los libros disponibles sin registrarse.
 * Para utilizar cualquier servicio de la web es necesario registrarse
 * Evitar que dos libros iguales tengan distintas fichas
+* Edad superior a 18 años o autorización.
+* Multiplataforma tanto web como app en el móvil o tablet y distintos sistemas operativos.
+* Tendremos unos libros públicos para la descarga típicos ademas de ensayos y revistas.
+* Si dos libros poseen distinto ISBN y tienen el mismo nombre, ponerlo como el mismo.
+* El sistema debe ser ágil y eficiente en el caso de tener elevada cantidad de usuarios.
+* El sistema debe de poder trabajar con varios usuarios a la vez.
++* Los datos de la base de datos deben ser actualizados con frecuencia.
+* Todas las conexiones externas con banco y otras empresas deben estar encifradas.
+* Si detectamos ataques de seguridad el sistema será bloqueado y avisara a un administrador.
+* El tiempo de aprendizaje debe ser menor a 5 min para el usuario.
+* El sistema debe actualizarse con elevada frecuencia.( la web)
+* Debe proporcional mensajes de error informativos y orientados al usuario final.
+* Interfaz grafica completa.
+* Recursos minimos para poder usar el sistema.
+* Debemos cumplir con la ley y la normativa a la vez de no revelar datos de usuarios.
+* Solo ofrecer datos de contacto reales (móvil, teléfono...) en el caso de que se realice transacción. 
