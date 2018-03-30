@@ -1,21 +1,21 @@
-### Requisitos funcionales
+﻿### Requisitos funcionales
 
-- Registro de usuarios
-- Identificación del usuario
-- Préstamo de libros
-- Tomar histórico del préstamo
-- Añadir libros para préstamo
-- Enviar mensajes privados entre usuarios
-- Buscador de libros
+- Registro de usuarios (Nombre,apellido1,apellido2,fechanac,si es menor de 18 autorización, dni, cuenta bancaria(contacto con banco para pago), telefono,e-mail,direccion para facturacion, pais, ciudad, cpostal)
+- Identificación del usuario (Correo electronico y contraseña)
+- Préstamo de libros (Accedes al menu de introducir el libro)
+- Tomar histórico del préstamo (Usuarios que lo han tenido, fecha, tiempo)
+- Añadir libros para préstamo (Nombre,autor,fecha,ISBN, año de publicación)
+- Enviar mensajes privados entre usuarios (A través de ventana interna del software)
+- Buscador de libros(Se introduce nombre,autor, fecha, o isbn y se localiza libro o parecidos)
 - Registro de búsquedas (Para estadísticas)
-- Estado de Libros
-- Valoración de usuarios
+- Estado de Libros(Nuevo, buen estado, normal, regular, defectuoso)
+- Valoración de usuarios (0-10 se valora el uso de la plataforma)
 - Sistema de contacto (Formulario para enviar algun mensaje a los administradores, para cualquier problema o sugerencia)
 - Aviso de fecha de devolución (Mensaje automático cuando quedan algunos días para devolver el libro)
-* Validación de devolución por parte del usuario que ha prestado el libro. 
-* Ficha con datos del libro. 
+* Validación de devolución por parte del usuario que ha prestado el libro. (Se da click en una pestaña y se entrega libro, la otra persona debe confirmar que lo ha recibido)
+* Ficha con datos del libro. (Nombre,autor,fecha,ISBN, año de publicación)
 * Administrar fichas (Por parte de la administración, poder editar datos incorrectos o eliminar fichas)
-* Penalizar usuarios
+* Penalizar usuarios (En el caso de cometer infracción se cobra importe y se da de baja cuenta)
 * El sistema enviara al usuario un correo con cada modificación o registro nuevo.
 * El administrador puede cancelar un pedido de libro.
 * El campo usuario admite caracteres de todo tipo.
