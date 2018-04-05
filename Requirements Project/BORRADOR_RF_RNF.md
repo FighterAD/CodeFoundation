@@ -26,6 +26,11 @@
 
 
 ### Requisitos no funcionales
+--Requisitos de Producto
+
+--Requisitos de Organización
+
+--Requisitos Externos
 
 * Activar cuenta con un ingreso bancario (depósito para cubrir desperfectos)(Mínimo de 20 euros en deposito por si se produce una irregularidad por parte del cliente)
 * Acceso a internet(Debido a que es una plataforma online)
