@@ -9,6 +9,25 @@
 ### Alcanze del Proyecto
   En este punto definimos los requisitos que se implementaran en el proyecto.
   
+  ## Requisitos Funcionales
+  
+  * Registro de usuario
+  * Ingreso de usuario
+  * Modificar de los datos de un usuario
+  * Añadir un libro
+  * Modificar los datos de un libro
+  * Buscar un libro
+  * Consultar los datos de un libro
+  * Solicitar un libro
+
+
+  ## Requisitos No Funcionales
+
+  * Todos los campos del registro de usuario son obligatorios
+  * Comprobar los datos de usuario a la hora de ingresar
+  * Edad superior
+  * Aceptar Terminos Legales
+
   
 ### Arquitectura y Plataforma 
   Utilizaremos una arquitectura Modelo Vista Controlador, Java, Mysql.
