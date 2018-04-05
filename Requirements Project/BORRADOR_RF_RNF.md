@@ -66,8 +66,8 @@
 * Si el nombre de usuario y la contraseña del usuario coinciden podrá acceder a de la web. en caso contrario tendremos un error, y dará opción a recuperar contraseña.(A su vez manda correo al usuario)
 * Debe proporcionar mensajes de error informativos y orientados al usuario final.(En cada paso y error que se produzca durante el funcionamiento).
 
---Requisitos Eticos 
-*Establecer una pólitica de funcionamiento de la empresa.
+--Requisitos Eticos  
+* Establecer una pólitica de funcionamiento de la empresa.
 
 --Requisitos Legislativos
 * Edad superior a 18 años o autorización en caso contrario.
