@@ -26,6 +26,11 @@
 
 
 ### Requisitos no funcionales
+--Requisitos de Producto
+
+--Requisitos de Organización
+
+--Requisitos Externos
 
 ---Requisitos de Producto:
 
