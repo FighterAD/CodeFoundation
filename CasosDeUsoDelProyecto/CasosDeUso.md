@@ -33,10 +33,10 @@
 * **Valoración de un libro**  (Alejandro Fuster López)
 **Descripción:** Se valora un libro mediante un sistema de puntiación del sistema. 
 
-* **Registro de uso de un libro**  (José Antonio Ruiz Castelló)
+* **Registro de uso de un libro**  (Jesús Pulido Vázquez)
 **Descripción:** Se registra los usuarios que hayan tenido acceso al libro.
 
-* **Descripción del estado de un libro**  (José Antonio Ruiz Castelló)
+* **Descripción del estado de un libro**  (Jesús Pulido Vázquez)
 **Descripción:** Se describe el estado de un libro (deficiente, aceptablem y óptimo)
 
 * **Busqueda de un libro**  (Pedro Antonio Aguilar Lima & Alejandro Fuster López)
