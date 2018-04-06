@@ -15,7 +15,7 @@ A continuación definiremos los requisitos a implementar a lo largo del desarrol
 ## Requisitos funcionales
 
 
-## Usuarios
+### Usuarios
 
 #### Requisito: Registro de un usuario.  
 **Descripción:** Se registra un usuario con los siguientes atributos (correo electrónico y contraseña).
@@ -36,7 +36,7 @@ A continuación definiremos los requisitos a implementar a lo largo del desarrol
 **Descripción:** Se administrará un usuario según las circunstancias del mismo.
 
 
-## Libros
+### Libros
 
 #### Requisito: Registro de un libro.
 **Descripción:** Se registra un libro con los siguientes atributos (nombre y autor).
@@ -60,7 +60,7 @@ A continuación definiremos los requisitos a implementar a lo largo del desarrol
 **Descripción:** Se administra un libro según las circunstancias del mismo.
 
 
-## Sistema
+### Sistema
 
 #### Requisito: Comunicación entre usuarios.
 **Descripción:** Comunicación entre usuarios para informar de la solicitud de prestamo del libro solicitado.
@@ -96,12 +96,12 @@ La plataforma de desarrollo escogida para desarrollar el proyecto es NetBeans.
 
 A continuación se puede apreciar los integrantes del grupo a cargo del desarrollo del proyecto, así como sus roles. La comunicación entre los mismos se realiza gracias a servicios de mensajeria instantanea.
 
-## Project Manager
+### Project Manager
 
 * Artem Pavlenko
 
 
-## Project Managers
+### Project Managers
 
 * Artem Pavlenko
 * Ana Rodríguez-Rabadán Gómez-Pimpollo
@@ -109,7 +109,7 @@ A continuación se puede apreciar los integrantes del grupo a cargo del desarrol
 * Andriy Dyachuk
 
 
-## Documentation Managers
+### Documentation Managers
 
 * Artem Pavlenko
 * Pedro Antonio Aguilar Lima
@@ -117,7 +117,7 @@ A continuación se puede apreciar los integrantes del grupo a cargo del desarrol
 * Jesús Pulido Vázquez
 
 
-## Developers
+### Developers
 
 * José Antonio Ruiz Castelló
 * Alejandro Fuster López
@@ -125,7 +125,7 @@ A continuación se puede apreciar los integrantes del grupo a cargo del desarrol
 * Ana Rodríguez-Rabadán Gómez-Pimpollo
 
 
-## Test Managers
+### Test Managers
 
 * Pedro Antonio Aguilar Lima
 * José Antonio Ruiz Castelló
