@@ -15,7 +15,7 @@ A continuación definiremos los requisitos a implementar a lo largo del desarrol
 ## Requisitos funcionales
 
 
-### Usuarios
+## Usuarios
 
 #### Requisito: Registro de un usuario.  
 **Descripción:** Se registra un usuario con los siguientes atributos (correo electrónico y contraseña).
@@ -36,7 +36,7 @@ A continuación definiremos los requisitos a implementar a lo largo del desarrol
 **Descripción:** Se administrará un usuario según las circunstancias del mismo.
 
 
-### Libros
+## Libros
 
 #### Requisito: Registro de un libro.
 **Descripción:** Se registra un libro con los siguientes atributos (nombre y autor).
@@ -60,7 +60,7 @@ A continuación definiremos los requisitos a implementar a lo largo del desarrol
 **Descripción:** Se administra un libro según las circunstancias del mismo.
 
 
-### Sistema
+## Sistema
 
 #### Requisito: Comunicación entre usuarios.
 **Descripción:** Comunicación entre usuarios para informar de la solicitud de prestamo del libro solicitado.
