@@ -10,68 +10,68 @@ El objetivo del plan del proyecto consiste en definir todos los objetivos a alca
 
 # - Alcance del proyecto
 
-A continuación definiremos los requisitos a implementar a lo largo del desarrollo del proyecto.
+A continuación definiremos los requisitos que se van a implementar, y los que no, a lo largo del desarrollo del proyecto.
 
 # Requisitos funcionales
 
 
 ## Usuarios
 
-* **Registro de un usuario**  
+- [x] **Registro de un usuario**  
   **Descripción:** Se registra un usuario con los siguientes atributos (correo electrónico y contraseña).
 
-* **Verificación de un usuario**  
+- [x] **Verificación de un usuario**  
   **Descripción:** Se verifica un usuario mediante el acceso a un enlace enviado a su correo electrónico.
 
-* **Identificación de un usuario**  
+- [x] **Identificación de un usuario**  
 **Descripción:** Se identifica al usuario con los siguientes atributos (correo electrónico y contraseña).
 
-* **Modificación de los datos de un usuario**  
+- [x] **Modificación de los datos de un usuario**  
 **Descripción:** Se modifica los datos de un usuario con los siguientes atributos (nombre, apellidos, fecha de nacimiento (se requiere la autorización de un tutor legal en caso de ser menor de edad), dni, teléfono, dirección, localidad, código postal, ciudad e IBAN).
 
-* **Valoración de un usuario**  
+- [x] **Valoración de un usuario**  
 **Descripción:** Se valora un usuario mediante un sistema de puntuación del sistema.
 
-* **Administración de un usuario**  
+- [x] **Administración de un usuario**  
 **Descripción:** Se administrará un usuario según las circunstancias del mismo.
 
 
 ## Libros
 
-* **Registro de un libro**  
+- [x] **Registro de un libro**  
 **Descripción:** Se registra un libro con los siguientes atributos (nombre y autor).
 
-* **Modificación de los datos de un libro**  
+- [x] **Modificación de los datos de un libro**  
 **Descripción:** Se modifica los datos de un libro con los siguientes atributos (editor, colección, idioma e ISBN).
 
-* **Valoración de un libro**  
+- [x] **Valoración de un libro**  
 **Descripción:** Se valora un libro mediante un sistema de puntiación del sistema. 
 
-* **Registro de uso de un libro**  
+- [x] **Registro de uso de un libro**  
 **Descripción:** Se registra los usuarios que hayan tenido acceso al libro.
 
-* **Descripción del estado de un libro**  
+- [x] **Descripción del estado de un libro**  
 **Descripción:** Se describe el estado de un libro (deficiente, aceptablem y óptimo)
 
-* **Busqueda de un libro**  
+- [x] **Busqueda de un libro**  
 **Descripción:** Se busca un libro con los siguientes atributos (nombre, autor, editor e ISBN).
 
-* **Administración de un libro**  
+- [x] **Administración de un libro**  
 **Descripción:** Se administra un libro según las circunstancias del mismo.
 
 
 ## Sistema
 
-* **Comunicación entre usuarios**  
+- [x] **Comunicación entre usuarios**  
 **Descripción:** Comunicación entre usuarios para informar de la solicitud de prestamo del libro solicitado.
 
-* **Prestamo de un libro**  
+- [x] **Prestamo de un libro**  
 **Descripción:** Se presta un libro al usuario solicitante por parte del usuario prestador.
 
-* **Devolución de un libro**  
+- [x] **Devolución de un libro**  
 **Descripción:** Se devuelve un libro al usuario prestador por parte del usuario solicitante.
 
-* **Administración de un prestamo**  
+- [x] **Administración de un prestamo**  
 **Descripción:** Se administra un prestamo según las circunstancias del mismo. 
 
 
