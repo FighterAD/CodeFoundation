@@ -15,7 +15,7 @@
 #### Requisito: Modificación de los datos de un usuario.
 **Descripción:** Se modifica los datos de un usuario con los siguientes atributos (nombre, apellidos, fecha de nacimiento (se requiere la autorización de un tutor legal en caso de ser menor de edad), dni, teléfono, dirección, localidad, código postal, ciudad e IBAN).
 
-#### Requisito: Valoracón de un usuario.
+#### Requisito: Valoración de un usuario.
 **Descripción:** Se valora un usuario mediante un sistema de puntuación del sistema.
 
 #### Requisito: Administración de un usuario.
