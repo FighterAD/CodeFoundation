@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:th="http://www.thymeleaf.org"
-	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 
 
 <head>
 <meta charset="UTF-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width" />
+<title>Codex-Login </title>
+    
+
 <style>
 @font-face {
     font-family: 'NixieOne'; /*Nombre para ser referenciado*/
     src: url(https://fonts.gstatic.com/s/nixieone/v8/lW-8wjkKLXjg5y2o2uUYV-ty.woff2) format('woff2');
-
 }
 
 h1 {
@@ -29,6 +31,17 @@ h2 {
     padding: 70px 0;
     text-align: center;
 }
+
+.container-1 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50em;
+    padding: 70px 0;
+    text-align: center;
+    background-color: lightgray;
+    border-radius: 25px;
+}
+
 
 .footer {
     position: fixed;
@@ -49,13 +62,13 @@ h2 {
 }
 
 .search input {
-background-image:url(https://i.imgur.com/gU6PlKZ.png);
+background-image:url(166088.png);
 background-repeat: no-repeat;
 background-position: -6px;
 border:1px solid #DADADA;
 margin-top:10px;
 padding-left:35px;
-width:550px;
+width:310px;
 height:30px;
 font-size:14px;
 box-shadow:0 0 10px;
@@ -98,76 +111,61 @@ a:active {
     color: black;
 }
 
-
 </style>
-<title>Codex </title>
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 
+
+
+
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width" />
+
 <body>
-
     
-<div sec:authorize="isAuthenticated()">
-    <div class ="topcorner">
-        <a href="/libros">Consultar libros</a>
-        <a href="/personas">Consultar personas</a>
-    </div>
-</div>
-    
-<div sec:authorize="isAnonymous()">
-    <div class ="topcorner">
-		<a href="/login">Login</a>
-    </div>
-</div>
-    
-	
-    <div class = container>
+    <div class = "container">
         <h1>Codex</h1>
-	<div>
-		<a href="/console">Gestor de base de datos</a> (en el parametro JDBC
-		URL usar la cadena de conexion especificada en el fichero
-		application.properties. Ejemplo: jdbc:h2:file:./database)
-        </div>
-    
-    
-	<br>
-        
-<div class="search">
-    <input id="srchtxt" type="text" data-toggle="tooltip" title="Búsqueda">
-  </div>
+    </div>
 
-    
-    
-	<div sec:authorize="isAuthenticated()">
-		<h2>Opciones</h2>
-		<div>
-			<a href="/libros">Consultar libros</a>
-		</div>
-		<div>
-			<a href="/personas">Consultar personas</a>
-		</div>
-	</div>
+	<div class="container-1">
+		<form th:action="@{/login}" method="post">
+            
+			<div>
+				<label> 
+                <p align= center> Email : <input type="text" name="username" />
+				</label>
 
-	<br>
-	<div sec:authorize="isAuthenticated()">
-		<div>Estás logueado con el usuario <b sec:authentication="name"></b>
-		</div>
-		<form th:action="@{/logout}" method="post">
-			<input type="submit" value="Logout" />
+				<label> 
+                 <p align= center> Contraseña : <input type="password" name="password" />
+				</label>
+			</div>
+            
+			<div>
+				<input class="btn btn-primary" type="submit" value="Sign In" />
+			</div>
+
+			<div>
+				<br>Usuario por defecto: test@test.com <br> Contraseña: test
+			</div>
+
+			<br>
+			<div>
+				<a class="btn btn-primary" href="/" role="button">Volver</a>
+			</div>
 		</form>
 	</div>
-
-	<div sec:authorize="isAnonymous()">
-		<div>No estás logueado</div>
-		<a href="/login">Login</a>
-	</div>
-
-    </div>
-    
+        
+        
     <div class="footer">
   <p>Codex es un proyecto de CodeFoundation</p>
 </div>
 
 
 </body>
+            
 </html>
-
