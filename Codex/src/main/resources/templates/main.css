@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'NixieOne'; /*Nombre para ser referenciado*/
+    src: url('NixieOne.ttf'); /*URL a la fuente*/
+}
+
+h1 {
+    font-family: NixieOne;
+    font-size: 60px
+}
+
+h2 {
+    font-family: NixieOne;
+    font-size: 30px
+}
+
+.container {
+    width: 850px;
+    height: auto;
+    background-color: lightgray;
+    -webkite-border.radius:25px;
+    -moz-border-radius:25px;
+    border-radius: 25px;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    margin: auto;
+    text-align: center;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+    font-family: NixieOne
+
+}
+
+.search {
+  width: 543.026px;
+  height: 37.9972px;
+  margin: 30px auto;
+}
+
+.search input {
+  width: 525.043px;
+  height: 37.9972px;
+  padding: 0 5px;
+  font-size: 17px;
+}
+
+ .topcorner{
+   position:absolute;
+   top:0;
+   right: 5px;
+   font-family: NixieOne
+  }
+
+a:link {
+    color: black;
+}
+
+/* link visitado */
+a:visited {
+    color: gray;
+}
+
+/* cursor sobre el enlance */
+a:hover {
+    color: dimgray;
+}
+
+/* link seleccionado */
+a:active {
+    color: black;
+}
+
