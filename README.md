@@ -18,7 +18,6 @@ Creado en 2017, Codex es una plataforma para compartir libros entre los usuarios
 ### Project Managers
 
 * Artem Pavlenko
-* Ana Rodríguez-Rabadán Gómez-Pimpollo
 * Jesús Pulido Vázquez
 * Andriy Dyachuk
 
@@ -33,15 +32,14 @@ Creado en 2017, Codex es una plataforma para compartir libros entre los usuarios
 
 ### Developers
 
-* José Antonio Ruiz Castelló
+
 * Alejandro Fuster López
 * Frank Leandro Mejías Cervantes
-* Ana Rodríguez-Rabadán Gómez-Pimpollo
+
 
 
 ### Test Managers
 
 * Pedro Antonio Aguilar Lima
-* José Antonio Ruiz Castelló
 * Frank Leandro Mejías Cervantes
 * Andriy Dyachuk
