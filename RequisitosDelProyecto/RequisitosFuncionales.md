@@ -42,8 +42,11 @@
 * **Busqueda de un libro**  
 **Descripción:** Se busca un libro con los siguientes atributos (nombre, autor, editor e ISBN).
 
-* **Administración de un libro**  
-**Descripción:** Se administra un libro según las circunstancias del mismo.
+* **Agregar libro**  
+**Descripción:** Se agrega un libro nuevo(nombre, autor, editor e ISBN).
+
+* **Eliminar libro**
+**Descripcion:** Elimina un libro.
 
 
 ## Sistema
