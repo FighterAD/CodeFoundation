@@ -45,7 +45,7 @@
 * **Agregar libro**  
 **Descripción:** Se agrega un libro nuevo(nombre, autor, editor e ISBN).
 
-* **Eliminar libro**
+* **Eliminar libro**  
 **Descripcion:** Elimina un libro.
 
 
