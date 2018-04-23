@@ -20,13 +20,13 @@
   la vez al mismo libro).
 
 ### Requisito de portabilidad
-* Multiplataforma tanto web como app en el móvil o tablet y distintos sistemas operativos.
+* Multi-plataforma tanto web como app en el móvil o tablet y distintos sistemas operativos.
 
 ### Requisitos de uso
 * Acceso a internet.
 * Es necesario un navegador web.
 * Tendremos unos libros públicos para la descarga típicos ademas de ensayos y revistas.
-* Interfaz grafica completa.
+* Interfaz gráfica completa.
 
 
 ## Requisitos externos:
@@ -38,8 +38,8 @@
 * Debe proporcionar mensajes de error informativos y orientados al usuario final. (En cada paso y error que se produzca
   durante el funcionamiento).
 
-### Requisitos eticos  
-* Establecer una pólitica de funcionamiento de la empresa.
+### Requisitos éticos  
+* Establecer una política de funcionamiento de la empresa.
 
 ### Requisitos legislativos
 * Edad superior a 18 años o autorización en caso contrario.
