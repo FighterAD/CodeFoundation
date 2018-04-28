@@ -12,17 +12,17 @@ public class Libro {
 	private String nombre;
 	private int anyo; 
 
-	@OneToOne
-	private Persona autor;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "autor_id", nullable = false)
+	private Autor autor;
 
-	@OneToOne
-	private Persona editor;
+	private String editor;
 
 	public Libro() {
 
 	}
 
-	public Libro(long isbn13, String name, int anyo, Persona autor, Persona editor) {
+	public Libro(long isbn13, String name, int anyo, Autor autor, String editor) {
 		this.nombre = name;
 		this.anyo = anyo;
 		this.autor = autor;
@@ -30,11 +30,11 @@ public class Libro {
 		this.isbn13 = isbn13;
 	}
 
-	public Persona getEditor() {
+	public String getEditor() {
 		return editor;
 	}
 
-	public void setEditor(Persona editor) {
+	public void setEditor(String editor) {
 		this.editor = editor;
 	}
 
@@ -54,11 +54,11 @@ public class Libro {
 		this.nombre = nombre;
 	}
 
-	public Persona getAutor() {
+	public Autor getAutor() {
 		return autor;
 	}
 
-	public void setAutor(Persona autor) {
+	public void setAutor(Autor autor) {
 		this.autor = autor;
 	}
 	
@@ -87,7 +87,7 @@ public class Libro {
 
 	@Override
 	public String toString() {
-		return "Libro [isbn13=" + isbn13 + ", nombre=" + nombre + ", Año=" + anyo + ", autor=" + autor
+		return "Libro [isbn13=" + isbn13 + ", nombre=" + nombre + ", Aï¿½o=" + anyo + ", autor=" + autor
 				+ ", editor=" + editor + "]";
 	}
 
