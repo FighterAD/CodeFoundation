@@ -40,7 +40,7 @@
 * **Descripción del estado de un libro**  
   **Descripción:** Se describe el estado de un libro (deficiente, aceptable y óptimo)
 
-* **Búsqueda de un libro**  
+* **Búsqueda de un libro**  
   **Descripción:** Se busca un libro con los siguientes atributos (nombre, autor, editor e ISBN).
 
 
@@ -49,11 +49,11 @@
 * **Comunicación entre usuarios**  
   **Descripción:** Comunicación entre usuarios para informar de la solicitud de préstamo del libro solicitado.
 
-* **Préstamo de un libro**  
-  **Descripción:** Se presta un libro al usuario solicitante por parte del usuario prestador.
+* **Préstamo de un libro**  
+  **Descripción:** Se presta un libro al usuario solicitante por parte del usuario prestador.
 
 * **Devolución de un libro**  
   **Descripción:** Se devuelve un libro al usuario prestador por parte del usuario solicitante.
 
-* **Administración de un préstamo**  
-  **Descripción:** Se administra un prestamo según las circunstancias del mismo. 
+* **Administración de un préstamo**  
+  **Descripción:** Se administra un prestamo según las circunstancias del mismo. 
