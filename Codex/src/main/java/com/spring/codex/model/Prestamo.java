@@ -1,15 +1,20 @@
 package com.spring.codex.model;
 
+import javax.persistence.*;
+
+@Entity
 public class Prestamo {
+	@Id
+	private int idPrestamo;
 	private Fecha fecha_prestamo;
 	private Fecha fecha_devolucion;
 	
-	public Prestamo() {
-		fecha_prestamo = new Fecha();
-		fecha_devolucion = new Fecha();
+	public Prestamo(int id) {
+		this(new Fecha(), new Fecha(), id);
 	}
 	
-	public Prestamo(Fecha f_prestamo, Fecha f_devolucion) {
+	public Prestamo(Fecha f_prestamo, Fecha f_devolucion, int id) {
+		idPrestamo = id;
 		establecerPrestamo(f_prestamo);
 		establecerDevolucion(f_devolucion);
 	}
