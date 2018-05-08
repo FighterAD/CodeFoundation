@@ -5,16 +5,17 @@ import javax.persistence.*;
 @Entity
 public class Prestamo {
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int idPrestamo;
+	
 	private Fecha fecha_prestamo;
 	private Fecha fecha_devolucion;
 	
-	public Prestamo(int id) {
-		this(new Fecha(), new Fecha(), id);
+	public Prestamo() {
+		this(new Fecha(), new Fecha());
 	}
 	
-	public Prestamo(Fecha f_prestamo, Fecha f_devolucion, int id) {
-		idPrestamo = id;
+	public Prestamo(Fecha f_prestamo, Fecha f_devolucion) {
 		establecerPrestamo(f_prestamo);
 		establecerDevolucion(f_devolucion);
 	}
