@@ -1,3 +1,4 @@
+
 package com.spring.codex.model;
 
 import javax.persistence.*;
@@ -7,7 +8,6 @@ public class Prestamo {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int idPrestamo;
-	
 	private Fecha fecha_prestamo;
 	private Fecha fecha_devolucion;
 	

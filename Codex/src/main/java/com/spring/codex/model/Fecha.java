@@ -1,5 +1,4 @@
 package com.spring.codex.model;
-
 import java.util.Calendar;
 
 public class Fecha {
@@ -53,7 +52,7 @@ public class Fecha {
 	public int obtenerMes() {
 		return mes;
 	}
-
+  
 	public int obtenerAnyo() {
 		return anyo;
 	}
