@@ -1,16 +1,17 @@
+package com.spring.codex.model;
 import java.util.Calendar;
 
 public class Fecha {
 	private int dia;
 	private int mes;
-	private int año;
+	private int anyo;
 	private Calendar date = Calendar.getInstance();
 
 	// La fecha se inicia a la de hoy
 	public Fecha() {
 		dia = date.get(Calendar.DAY_OF_MONTH);
 		mes = date.get(Calendar.MONTH) + 1;
-		año = date.get(Calendar.YEAR);
+		anyo = date.get(Calendar.YEAR);
 	}
 
 	// La fecha es la que es pasada por parametros
@@ -21,7 +22,7 @@ public class Fecha {
 	public Fecha(Fecha f) {
 		dia = f.obtenerDia();
 		mes = f.obtenerMes();
-		año = f.obtenerAño();
+		anyo = f.obtenerAnyo();
 	}
 
 	public void establecerFecha(int d, int m, int a) {
@@ -41,7 +42,7 @@ public class Fecha {
 
 		dia = d;
 		mes = m;
-		año = a;
+		anyo = a;
 	}
 
 	public int obtenerDia() {
@@ -51,9 +52,9 @@ public class Fecha {
 	public int obtenerMes() {
 		return mes;
 	}
-
-	public int obtenerAño() {
-		return año;
+  
+	public int obtenerAnyo() {
+		return anyo;
 	}
 
 	private boolean bisiesto(int a) {
@@ -62,6 +63,6 @@ public class Fecha {
 
 	@Override
 	public String toString() {
-		return dia + "/" + mes + "/" + año;
+		return dia + "/" + mes + "/" + anyo;
 	}
 }
