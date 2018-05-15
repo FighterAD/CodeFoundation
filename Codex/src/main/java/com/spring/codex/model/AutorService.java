@@ -22,12 +22,13 @@ public class AutorService {
 	}
 	
 	public void add(Autor autor) {
-		return autorRepository.save(autor);
+		 autorRepository.save(autor);
 	}
 	
 	public void update(Autor autor) {
 		Autor p = autorRepository.getOne(autor.getID());
-		p.setApellido(autor.getApellido());
+		p.setApellido1(autor.getApellido1());
+		p.setApellido2(autor.getApellido2());
 		p.setNombre(autor.getNombre());
 		autorRepository.saveAndFlush(p);
 	}

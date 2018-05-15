@@ -23,21 +23,21 @@ public class UsuarioRepositoryDetailsService implements UserDetailsService {
 
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		User user = usuarioRepository.findByEmail(username);
+		Usuario user = usuarioRepository.findByEmail(username);
 		if (user == null) {
 			throw new UsernameNotFoundException("No se pudo encontrar: " + username);
 		}
 		return new CustomUserDetails(user);
 	}
 
-	private final static class CustomUserDetails extends User implements UserDetails {
+	private final static class CustomUserDetails extends Usuario implements UserDetails {
 
 		/**
 		 * 
 		 */
 		private static final long serialVersionUID = -5708084648279451366L;
 
-		private CustomUserDetails(User user) {
+		private CustomUserDetails(Usuario user) {
 			super(user);
 		}
 

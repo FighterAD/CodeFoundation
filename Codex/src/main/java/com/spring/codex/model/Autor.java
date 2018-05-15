@@ -29,7 +29,7 @@ public class Autor {
 		this.apellido2 = apellido2;
 	}
 
-	public int getID() {
+	public long getID() {
 		return ID;
 	}
 
@@ -72,7 +72,7 @@ public class Autor {
 	@Override
 	public int hashCode() {
 		try {
-			return ID;
+			return (int) ID;
 		} catch (Exception er) {
 			return 0;
 		}

@@ -3,5 +3,5 @@ package com.spring.codex.model;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface AutorRepository extends JpaRepository<Autor, Long> {
-	Autor findByNombre(string nombre);
+	Autor findByNombre(String nombre);
 }
