@@ -8,7 +8,7 @@ public class Autor {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int ID;
+	private long ID;
 	
 	private String nombre;
 	private String apellido1;
