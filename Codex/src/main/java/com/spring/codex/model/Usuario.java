@@ -10,7 +10,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 public class Usuario {
 	
     @Id
-    @Size(min=9, max=9)
+    //@Size(min=9, max=9)
     private String DNI;
     
     private String apellido1;
@@ -27,7 +27,7 @@ public class Usuario {
     
     private String direccion;
     
-    @Size(min=5, max=5)
+    //@Size(min=5, max=5)
     private int codigoPostal;
     
     public Usuario() {

@@ -16,7 +16,8 @@ public class Autor {
 	
 	@OneToMany(cascade = CascadeType.ALL,
 	            fetch = FetchType.LAZY,
-	            mappedBy = "Autor")
+	            mappedBy = "autor")
+	//Importante: Cuidado con el mappedBy, es el nombre de la variable, no de la clase.
 	private List<Libro> libros;
 	
 	public Autor() {
