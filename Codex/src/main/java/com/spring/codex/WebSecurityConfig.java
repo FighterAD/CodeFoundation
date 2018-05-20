@@ -27,7 +27,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 				// datos
 				// permitir que ignore los ficheros de la carpeta css para evitar problemas de redireccion
 				// si se anaden mas ficheros como librerias javascripts, anadirlos a la carpeta /lib 
-				.antMatchers("/", "/console/**", "/css/**", "/js/**").permitAll().anyRequest().authenticated()
+				.antMatchers("/", "/console/**", "/css/**", "/js/**", "/registro").permitAll().anyRequest().authenticated()
 
 				.and()
 
