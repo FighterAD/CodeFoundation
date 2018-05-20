@@ -13,6 +13,7 @@ public class Usuario {
     //@Size(min=9, max=9)
     private String DNI;
     
+    private String nombre;
     private String apellido1;
     private String apellido2;
 
@@ -51,6 +52,14 @@ public class Usuario {
 
 	public void setDNI(String dNI) {
 		DNI = dNI;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
 
 	public String getApellido1() {
