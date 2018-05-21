@@ -23,7 +23,7 @@ public class Usuario {
     @NotNull
     private String password;
     
-    @DateTimeFormat(pattern = "yy-MM-dd")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date fecha_nacimiento;
     
     private String direccion;
