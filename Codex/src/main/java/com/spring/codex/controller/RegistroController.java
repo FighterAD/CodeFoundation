@@ -38,13 +38,17 @@ public class RegistroController {
         if (existe != null){
             result.rejectValue("email", null, "¡Oops! Ya hay un usuario con ese correo. ");
         }
+        
+
 
         if (result.hasErrors()){
+        	System.out.print(result.getAllErrors());
             return "registro";
         }
 
         userService.saveUsuario(user);
         return "redirect:/";
     }
+    
 
 }

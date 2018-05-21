@@ -19,7 +19,19 @@ public class UsuarioService {
 	}
 	
 	public void saveUsuario (Usuario usuario) {
+		/*
+		Usuario usuario = new Usuario();
+		usuario.setDNI(user.getDNI());
+		usuario.setApellido1(user.getApellido1());
+		usuario.setApellido2(user.getApellido2());
+		usuario.setEmail(user.getEmail());
+		*/
 		usuario.setPassword(passwordEncoder.encode(usuario.getPassword()));
+		/*
+		usuario.setFecha_nacimiento(user.getFecha_nacimiento());
+		usuario.setDireccion(user.getDireccion());
+		usuario.setCodigoPostal(user.getCodigoPostal());
+		*/
 		usuarioRepository.save(usuario);
 	}
 
