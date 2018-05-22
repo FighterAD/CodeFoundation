@@ -20,11 +20,12 @@ public class AutorController {
 
 	@Autowired
 	AutorService autorService;
+	
 
 	/*---Devuelve el template de autors---*/
 	@GetMapping("/autores")
 	public String listPersonView(Model model) {
-		model.addAttribute("autors", autorService.getAll());
+		model.addAttribute("autores", autorService.getAll());
 		// devuelvo el template autors
 		return "autores";
 	}
@@ -32,7 +33,7 @@ public class AutorController {
 	/*---Devuelve el formulario para crear una autor---*/
 	@GetMapping("/autores/add")
 	public String addPersonView(Autor autor, Model model) {
-		model.addAttribute("autors", autorService.getAll());
+		model.addAttribute("autores", autorService.getAll());
 		model.addAttribute("autor", autor);
 		return "addAutor";
 	}
