@@ -34,7 +34,10 @@ public class LibroService {
 	}
 
 	public void add(Libro libro) {
-		repository.saveAndFlush(libro);
+		Libro busqueda = repository.findByIsbn13(libro.getIsbn13());
+		if (busqueda == null) {
+			repository.save(libro);
+		}	
 	}
 
 	public void delete(long isbn13) {

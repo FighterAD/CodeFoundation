@@ -38,7 +38,7 @@ public class LibroController {
 	/*---Devuelve el formulario para crear un libro---*/
 	@GetMapping("/libros/add")
 	public String addLibroView(Libro libro, Model model) {
-		model.addAttribute("personas", autorService.getAll());
+		model.addAttribute("autores", autorService.getAll());
 		model.addAttribute("libro", libro);
 		return "addLibro";
 	}
@@ -46,7 +46,7 @@ public class LibroController {
 	/*---Devuelve el formulario para editar un libro---*/
 	@GetMapping("/libros/edit/{isbn}")
 	public String editLibroView(@PathVariable("isbn") Long isbn, Model model) {
-		model.addAttribute("personas", autorService.getAll());
+		model.addAttribute("autores", autorService.getAll());
 		model.addAttribute("libro", libroService.getByIsbn13(isbn));
 		return "updateLibro";
 	}

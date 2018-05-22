@@ -28,6 +28,7 @@ public class Autor {
 		this.nombre = nombre;
 		this.apellido1 = apellido1;
 		this.apellido2 = apellido2;
+		//this.iD = nombre.hashCode() + apellido2.hashCode() + apellido1.hashCode();
 	}
 
 	public long getID() {
@@ -73,7 +74,7 @@ public class Autor {
 	@Override
 	public int hashCode() {
 		try {
-			return (int) iD;
+			return (int) iD + nombre.toLowerCase().hashCode() + apellido1.toLowerCase().hashCode() + apellido2.toLowerCase().hashCode();
 		} catch (Exception er) {
 			return 0;
 		}
@@ -83,7 +84,7 @@ public class Autor {
 	public boolean equals(Object obj) {
 		boolean res = obj instanceof Autor;
 		Autor aut = res? (Autor)obj : null;
-		return res && iD == aut.iD;
+		return (res && ((iD == aut.iD)||((nombre.equalsIgnoreCase(aut.nombre)&&(apellido1.equalsIgnoreCase(aut.apellido1)&&(apellido2.equalsIgnoreCase(aut.apellido2)))))));
 	}
 
 	@Override

@@ -25,8 +25,16 @@ public class AutorService {
 		return autorRepository.findByNombre(nombre);
 	}
 	
+	public Autor getByNombreApellido1Apellido2(String nombre, String apellido1, String apellido2) {
+		return autorRepository.findByNombreAndApellido1AndApellido2(nombre,apellido1,apellido2);
+	}
+
+	
 	public void add(Autor autor) {
-		 autorRepository.save(autor);
+		Autor busqueda = autorRepository.findByNombreAndApellido1AndApellido2(autor.getNombre(), autor.getApellido1(), autor.getApellido2());
+		if (busqueda == null) {
+			autorRepository.save(autor);
+		}
 	}
 	
 	public void update(Autor autor) {

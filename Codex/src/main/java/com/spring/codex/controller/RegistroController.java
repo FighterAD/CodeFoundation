@@ -26,7 +26,7 @@ public class RegistroController {
     }
 
     @GetMapping
-    public String muestrRegistro(Model model) {
+    public String muestraRegistro(Model model) {
         return "registro";
     }
 
