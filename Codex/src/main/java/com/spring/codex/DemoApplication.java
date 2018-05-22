@@ -27,14 +27,14 @@ public class DemoApplication {
 	}
 
 	@Bean
-	public CommandLineRunner demo(LibroService libroService, AutorService personaService) {
+	public CommandLineRunner demo(LibroService libroService, AutorService autorService) {
 		return (args) -> {
 			// crear datos al arrancar la aplicación
 			// se usa para meter datos de prueba
 			Autor fede = new Autor("Federico", "Garcia", "Lorca");
 			Autor una = new Autor("Miguel", "de Unamuno", "y Jugo");
-			personaService.add(fede);
-			personaService.add(una);
+			autorService.add(fede);
+			autorService.add(una);
 
 			Libro libro1 = new Libro(12312l, "Yerma", 1934, fede, "Austral");
 			Libro libro2 = new Libro(1122l, "Niebla	", 1907, una, "Alianza");
