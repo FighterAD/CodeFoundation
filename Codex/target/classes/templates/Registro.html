@@ -1,63 +1,65 @@
 <!Doctype html>
-<html lang=es>
+<html xmlns:th="http://www.thymeleaf.org" lang=es>
     <head>
         <meta charset=="UTF-8">
         <title>Registro</title>
-        <link rel="stylesheet" type="text/css" href="Registro.css">
+        <link rel="stylesheet" type="text/css" href="css/Registro.css">
     </head>
     <body>
-        <div class="enlaces">
-            <a href="https://www.google.es/">Index</a>
-            <a href="https://www.google.es/">Registro</a>
-            <a href="https://www.google.es/">Login</a>
-            <a href="https://www.google.es/">Contacto</a>
+        <div class="topcorner">
+            <a href="/">Index</a>
+            <a href="/Login">Login</a>
         </div>
         
         <h1>Codex</h1>
+ 
+        <form action="#" th:action="@{/registro}" th:object="${user}" method="post">
+<div class="container">
+            <div>
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" th:field="*{DNI}"/>
+            </div>
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" th:field="*{nombre}"/>
+            </div>
+            <div>
+                <label for="apellido1">Apellido1:</label>
+                <input type="texto" id="apellido1" th:field="*{apellido1}"/>    
+            </div>
+            <div>
+                <label for="apellido2">Apellido2:</label>
+                <input type="texto" id="apellido2" th:field="*{apellido2}"/>    
+            </div>
+            <div>
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" th:field="*{email}"/>    
+            </div>
+            <div>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" th:field="*{password}"/>    
+            </div>
+            <div>
+                <label for="direccion">Direccion:</label>
+                <input type="text" id="direccion" th:field="*{direccion}"/>    
+            </div>
+            <div>
+                <label for="cp">Codigo Postal:</label>
+                <input type="text" id="cp" th:field="*{codigoPostal}"/>    
+            </div>
+            <div>
+                <label for="fechaN">Nacimiento:</label>
+                <input type="date" id="fechaN" th:field="*{fecha_nacimiento}"/>    
+            </div>
+            <div class="button">
+                <button type="submit">Registrar</button>   
+            </div>
+ </div>
+        </form>
         
-<form action="#" th:action="@{/registro}" th:object="${user}" method="post">
-        <div>
-            DNI
-            <input type="text" th:field="*{DNI}" />
-        </div>
-        <div>
-            <td>Nombre</td>
-            <td><input type="text" th:field="*{nombre}" /></td>
-        </div>
-        <div>
-            <td>Apellido1</td>
-            <td><input type="text" th:field="*{apellido1}" /></td>
-        </div>
-        <div>
-            <td>Apellido2</td>
-            <td><input type="text" th:field="*{apellido2}" /></td>
-        </div>
-        <div>
-            <td>e-mail</td>
-            <td><input type="email" th:field="*{email}" /></td>
-        </div>
-            <div>
-            <td>Contraseña</td>
-            <td><input type="password" th:field="*{password}" /></td>
-        </div>
-        <div>
-            <td>Fecha nacimiento</td>
-            <td><input type="date" th:field="*{fecha_nacimiento}" /></td>
-        </div>
-        <div>
-            <td>Direccion</td>
-            <td><input type="text" th:field="*{direccion}" /></td>
-        </div>
-            <div>
-            <td>Codigo Postal</td>
-            <td><input type="text" th:field="*{codigoPostal}" /></td>
-        </div>
-
-        <div>
-            <td><input type="submit" value="Enviar" /></td>
-        </div>
-</form>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+            <div class="footer">
+  <p>Codex es un proyecto de CodeFoundation</p>
+</div>
+        
     </body>
 </html>

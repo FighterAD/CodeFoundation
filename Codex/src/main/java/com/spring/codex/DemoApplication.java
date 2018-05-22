@@ -31,8 +31,12 @@ public class DemoApplication {
 		return (args) -> {
 			// crear datos al arrancar la aplicación
 			// se usa para meter datos de prueba
+			
+			
 			Autor fede = new Autor("Federico", "Garcia", "Lorca");
+			//fede.setID(1);
 			Autor una = new Autor("Miguel", "de Unamuno", "y Jugo");
+			//una.setID(2);
 			autorService.add(fede);
 			autorService.add(una);
 
@@ -44,6 +48,8 @@ public class DemoApplication {
 			// ejemplo de como buscar por nombre
 			Libro l1 = libroService.getByName("Yerma");
 			Libro libroInexistente = libroService.getByName("NONAME");
+			
+			
 		};
 	}
 	

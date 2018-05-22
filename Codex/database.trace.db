@@ -1,0 +1,18 @@
+2018-05-22 23:33:51 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "SELECT * FROM LIBRO UNION AUTOR[*]"; se esperaba "ALL, DISTINCT, (, WITH, SELECT, FROM"
+Syntax error in SQL statement "SELECT * FROM LIBRO UNION AUTOR[*]"; expected "ALL, DISTINCT, (, WITH, SELECT, FROM"; SQL statement:
+SELECT * FROM LIBRO UNION AUTOR [42001-196]
+2018-05-22 23:34:27 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "SELECT * FROM LIBRO 
+SELECT[*] * FROM AUTOR"
+Syntax error in SQL statement "SELECT * FROM LIBRO 
+SELECT[*] * FROM AUTOR"; SQL statement:
+SELECT * FROM LIBRO 
+SELECT * FROM AUTOR [42000-196]
+2018-05-22 23:34:28 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "SELECT * FROM LIBRO 
+SELECT[*] * FROM AUTOR"
+Syntax error in SQL statement "SELECT * FROM LIBRO 
+SELECT[*] * FROM AUTOR"; SQL statement:
+SELECT * FROM LIBRO 
+SELECT * FROM AUTOR [42000-196]
