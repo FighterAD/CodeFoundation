@@ -21,7 +21,7 @@
 <body>
 	<div class="panel panel-default">
 		<div class="panel-heading">
-			<strong>Personas</strong>
+			<strong>Autores</strong>
 		</div>
 		<div class="panel-body">
 			<div class="table-responsive">
@@ -32,14 +32,13 @@
 							<th>Nombre</th>
 							<th>Apellido1</th>
 							<th>Apellido2</th>
-							<th>Libros</th>
 							<th>Operaciones</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr th:each="autor : ${autores}">
 							<td th:text="${autor.nombre}"></td>
-							<td th:text="${autor.apellido}"></td>
+							<td th:text="${autor.apellido1}"></td>
 							<td th:text="${autor.apellido2}"></td>
 							<td>
 								<div class="btn-group">
@@ -67,7 +66,7 @@
 			<strong>OK!</strong> El autor ha sido eliminado correctamente.
 		</div>
 		<div th:if="${delete != null && !delete}" class="alert alert-danger">
-			<strong>Error!</strong> Error eliminado el autor.
+			<strong>Error!</strong> Error eliminando el autor.
 		</div>
 		<div th:if="${update != null && update}" class="alert alert-success">
 			<strong>OK!</strong> El autor ha sido actualizado correctamente.
