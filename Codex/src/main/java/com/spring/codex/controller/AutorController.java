@@ -22,15 +22,15 @@ public class AutorController {
 	AutorService autorService;
 
 	/*---Devuelve el template de autors---*/
-	@GetMapping("/autors")
+	@GetMapping("/autores")
 	public String listPersonView(Model model) {
 		model.addAttribute("autors", autorService.getAll());
 		// devuelvo el template autors
-		return "autors";
+		return "autores";
 	}
 
 	/*---Devuelve el formulario para crear una autor---*/
-	@GetMapping("/autors/add")
+	@GetMapping("/autores/add")
 	public String addPersonView(Autor autor, Model model) {
 		model.addAttribute("autors", autorService.getAll());
 		model.addAttribute("autor", autor);
@@ -38,15 +38,15 @@ public class AutorController {
 	}
 
 	/*---Devuelve el formulario para editar una autor---*/
-	@GetMapping("/autors/edit/{id}")
-	public String editPersonView(@PathVariable("id") String id, Model model) {
+	@GetMapping("/autores/edit/{id}")
+	public String editPersonView(@PathVariable("id") long id, Model model) {
 		model.addAttribute("id", id);
-		model.addAttribute("autor", autorService.getByDni(id));
+		model.addAttribute("autor", autorService.getByID(id));
 		return "updateAutor";
 	}
 
 	/*---Anade una nueva autor al sistema---*/
-	@PostMapping("/autors")
+	@PostMapping("/autores")
 	public String save(@Valid Autor autor, BindingResult result, Model model) {
 		try {
 			autorService.add(autor);
@@ -58,7 +58,7 @@ public class AutorController {
 	}
 
 	/*---Actualiza una nueva autor del sistema---*/
-	@PostMapping("/autors/update")
+	@PostMapping("/autores/update")
 	public String update(@Valid Autor autor, Model model) {
 		try {
 			autorService.update(autor);
@@ -70,8 +70,8 @@ public class AutorController {
 	}
 
 	/*---Elimina una autor a partir de su DNI---*/
-	@DeleteMapping("/autors/{id}")
-	public String delete(@PathVariable("id") String id, Model model) {
+	@DeleteMapping("/autores/{id}")
+	public String delete(@PathVariable("id") long id, Model model) {
 		try {
 			autorService.delete(id);
 			model.addAttribute("delete", true);

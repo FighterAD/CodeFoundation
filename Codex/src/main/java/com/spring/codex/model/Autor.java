@@ -8,7 +8,7 @@ public class Autor {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long ID;
+	private long iD;
 	
 	private String nombre;
 	private String apellido1;
@@ -31,11 +31,11 @@ public class Autor {
 	}
 
 	public long getID() {
-		return ID;
+		return iD;
 	}
 
-	public void setID(int iD) {
-		ID = iD;
+	public void setID(long ID) {
+		this.iD = ID;
 	}
 
 	public String getNombre() {
@@ -73,7 +73,7 @@ public class Autor {
 	@Override
 	public int hashCode() {
 		try {
-			return (int) ID;
+			return (int) iD;
 		} catch (Exception er) {
 			return 0;
 		}
@@ -83,7 +83,7 @@ public class Autor {
 	public boolean equals(Object obj) {
 		boolean res = obj instanceof Autor;
 		Autor aut = res? (Autor)obj : null;
-		return res && ID == aut.ID;
+		return res && iD == aut.iD;
 	}
 
 	@Override
