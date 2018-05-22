@@ -45,13 +45,13 @@
 								<div class="btn-group">
 
 									<form action="#" id="deleteForm" th:method="delete"
-										th:action="@{/personas/{id}(id=${persona.dni})}">
+										th:action="@{/autores/{id}(id=${autor.ID})}">
 										<input type="submit" class="delete btn btn-sm btn-danger"
 											value="Eliminar" />
 									</form>
 
 									<form action="#" id="editForm" th:method="get"
-										th:action="@{/personas/edit/{id}(id=${persona.dni})}">
+										th:action="@{/autores/edit/{id}(id=${autor.ID})}">
 										<input type="submit" class="primary btn btn-sm btn-primary"
 											value="Editar" />
 									</form>
