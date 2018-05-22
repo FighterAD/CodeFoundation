@@ -1,0 +1,7 @@
+Hemos decidido que el modelo que mejor encajaba en nuestro proyecto es el MVC (Model-View-Controller). Como necesitamos que el usuario
+interactúe con la aplicación ya sea para registrarse, pedir libros prestado, navegar por la web, etc., creemos que el modelo MVC encaja 
+perfectamente en nuestro proyecto. Además, al dividir el software en tres capas principales bien diferenciadas facilita el desarrollo y 
+mantenimiento, esto conlleva que la calidad de la aplicación sea muy alta. La capa de Modelos será la encargada de dar los mecanismos para
+gestionar los datos, ya sea acceder a estos, crearlos, actualizarlos, etc. La capa de Vistas es la parte que el público ve, contendrá el 
+código de la aplicación que permite renderizar los estados de la aplicación. La capa de Controladores gestiona las respuestas necesarias
+para cada acción que solicite la aplicación, como por ejemplo, realizar un log-in, buscar un libro, comentar, etc.
