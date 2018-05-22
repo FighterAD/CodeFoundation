@@ -1,7 +1,39 @@
+@font-face {
+    font-family: 'NixieOne'; /*Nombre para ser referenciado*/
+    src: url('NixieOne.ttf'); /*URL a la fuente*/
+}
+
 .enlaces {
     text-align: right;
     border-bottom: 1px solid #CCC;
 }
+
+ .topcorner{
+   position:absolute;
+   top:0;
+   right: 5px;
+   font-family: NixieOne
+  }
+
+a:link {
+    color: black;
+}
+
+/* link visitado */
+a:visited {
+    color: gray;
+}
+
+/* cursor sobre el enlance */
+a:hover {
+    color: dimgray;
+}
+
+/* link seleccionado */
+a:active {
+    color: black;
+}
+
 
 .enlaces a {
     color: #777;
@@ -10,7 +42,7 @@
 }
 
 h1 {
-    font: 1em serif;
+    font-family: NixieOne;
     font-size: 4em;
     text-align: center;
 }
@@ -21,6 +53,10 @@ form {
     padding: 1em;
     border: 1px solid #CCC;
     border-radius: 1em;
+        background-color: lightgray;
+    -webkite-border.radius:25px;
+    -moz-border-radius:25px;
+    
 }
 
 form div + div {
@@ -51,4 +87,16 @@ input:focus {
 
 button {
     margin-left: 0.5em;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+    font-family: NixieOne
+
 }

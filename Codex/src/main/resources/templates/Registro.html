@@ -6,15 +6,15 @@
         <link rel="stylesheet" type="text/css" href="css/Registro.css">
     </head>
     <body>
-        <div class="enlaces">
+        <div class="topcorner">
             <a href="/">Index</a>
-            <a href="/Registro">Registro</a>
             <a href="/Login">Login</a>
         </div>
         
         <h1>Codex</h1>
-        
+ 
         <form action="#" th:action="@{/registro}" th:object="${user}" method="post">
+<div class="container">
             <div>
                 <label for="dni">DNI:</label>
                 <input type="text" id="dni" th:field="*{DNI}"/>
@@ -54,6 +54,12 @@
             <div class="button">
                 <button type="submit">Registrar</button>   
             </div>
+ </div>
         </form>
+        
+            <div class="footer">
+  <p>Codex es un proyecto de CodeFoundation</p>
+</div>
+        
     </body>
 </html>
