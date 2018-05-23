@@ -16,6 +16,10 @@ public class Usuario {
     private String nombre;
     private String apellido1;
     private String apellido2;
+    
+    @ManyToOne(fetch=FetchType.LAZY)
+    @JoinColumn(name="MENSAJE_ID")
+    private Mensaje mensaje;
 
     @Column(unique=true, nullable = false)
     private String email;
