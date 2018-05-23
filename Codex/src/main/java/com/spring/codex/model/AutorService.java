@@ -18,7 +18,7 @@ public class AutorService {
 	}
 	
 	public Autor getByID(long ID) {
-		return autorRepository.findByID(ID);
+		return autorRepository.getOne(ID);
 	}
 		
 	public Autor getByNombre(String nombre) {
