@@ -1,11 +1,11 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width" />
-<title>Nuevo Libro</title>
+<title>Actualizar Autor</title>
 <!-- jQuery library -->
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -18,11 +18,12 @@
 <body>
 	<div class="panel panel-default">
 		<div class="panel-heading">
-			<strong>Nuevo Libro</strong>
+			<strong>Actualizar Autor</strong>
 		</div>
+
 		<div class="panel-body">
-			<form class="form-horizontal" action="#" th:object="${libro}"
-				th:action="@{/libros}" method="POST" style="margin: 10px">
+			<form class="form-horizontal" action="#" th:object="${autor}"
+				th:action="@{/autores/update}" method="post" style="margin: 10px">
 				<div class="form-group">
 					<fieldset>
 						<div class="form-group row">
@@ -32,16 +33,10 @@
 								</div>
 							</div>
 						</div>
+
+
 						<div class="form-group row">
-							<div class="col-md-4"
-								th:classappend="${#fields.hasErrors('isbn13')}? 'has-error'">
-								<label>ISBN</label> <input type="number"
-									class="form-control input-sm" th:field="*{isbn13}"
-									autofocus="autofocus" placeholder="ISBN" maxlength="50" />
-							</div>
-						</div>
-						<div class="form-group row">
-							<div class="col-md-4"
+							<div class="col-md-5"
 								th:classappend="${#fields.hasErrors('nombre')}? 'has-error'">
 								<label>Nombre</label> <input type="text"
 									class="form-control input-sm" th:field="*{nombre}"
@@ -49,20 +44,36 @@
 							</div>
 						</div>
 						<div class="form-group row">
-							<div class="col-md-4"
-								th:classappend="${#fields.hasErrors('autor')}? 'has-error'">
-								<label>Autor</label> <select th:field="*{autor}">
-									<option th:field="*{autor}" th:each="autor : ${autores}"
-										th:value="${autores.iD}" th:text="${autor.nombre} + ' ' + ${autor.apellido1} + ' ' +   ${autor.apellido2}"></option>
-								</select>
+							<div class="col-md-5"
+								th:classappend="${#fields.hasErrors('apellido1')}? 'has-error'">
+								<label>Apellido 1</label> <input type="text"
+									class="form-control input-sm" th:field="*{apellido1}"
+									autofocus="autofocus" placeholder="Apellidos 1" maxlength="50" />
 							</div>
 						</div>
+
+						<div class="form-group row">
+							<div class="col-md-5"
+								th:classappend="${#fields.hasErrors('apellido2')}? 'has-error'">
+								<label>Apellido 2</label> <input type="text"
+									class="form-control input-sm" th:field="*{apellido2}"
+									autofocus="autofocus" placeholder="Apellido 2" maxlength="50" />
+							</div>
+
+						<div class="form-group row" hidden>
+							<div class="col-md-5"
+								th:classappend="${#fields.hasErrors('iD')}? 'has-error'">
+								<label>ID</label> <input type="text"
+									class="form-control input-sm" th:field="*{iD}"
+									autofocus="autofocus" placeholder="iD" maxlength="50" />
+							</div>
+
 						</div>
 					</fieldset>
 				</div>
 				<div class="form-group row">
-					<button type="submit" class="btn btn-sm btn-primary">Save</button>
-					<a th:href="@{/libros}" class="btn btn-sm btn-default">Cancel</a>
+					<button type="submit" class="btn btn-sm btn-primary">Guardar</button>
+					<a th:href="@{/autores}" class="btn btn-sm btn-default">Cancelar</a>
 				</div>
 			</form>
 		</div>
