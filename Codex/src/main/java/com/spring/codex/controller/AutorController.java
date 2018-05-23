@@ -31,7 +31,7 @@ public class AutorController {
 	}
 
 	/*---Devuelve el formulario para crear una autor---*/
-	@GetMapping("/autores/add")
+	@GetMapping("/autor/add")
 	public String addPersonView(Autor autor, Model model) {
 		model.addAttribute("autores", autorService.getAll());
 		model.addAttribute("autor", autor);
@@ -66,6 +66,7 @@ public class AutorController {
 			model.addAttribute("udpate", true);
 		} catch (Exception er) {
 			model.addAttribute("update", false);
+			System.out.println(er.getMessage());
 		}
 		return listPersonView(model);
 	}

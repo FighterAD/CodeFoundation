@@ -8,12 +8,14 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.spring.codex.model.Libro;
 import com.spring.codex.model.LibroService;
 import com.spring.codex.model.AutorService;
+import com.spring.codex.model.Autor;
 
 // Controlador de los objetos Libro
 @Controller
@@ -24,6 +26,12 @@ public class LibroController {
 
 	@Autowired
 	AutorService autorService;
+	
+    @ModelAttribute("autor")
+    public Autor Autor() {
+        return new Autor();
+    }
+
 
 	/*---Devuelve el template HTML de libros---*/
 	// petición recibida por get
