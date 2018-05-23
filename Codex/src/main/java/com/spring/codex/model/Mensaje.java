@@ -1,17 +1,21 @@
 package com.spring.codex.model;
 
+import java.util.List;
+
 import javax.persistence.*;
 
 @Entity
 public class Mensaje {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int ID;
-
+	private long id;
 	private String mensaje;
 	private String emisor;
 	private String receptor;
 
+	@OneToMany(cascade=CascadeType.ALL, fetch=FetchType.LAZY, mappedBy="mensaje")
+	public List<Usuario> usuarios;
+	
 	public Mensaje() {
 		this("", "", "");
 	}
@@ -22,41 +26,37 @@ public class Mensaje {
 		mensaje = m;
 	}
 
-	public void establecerMensaje(String m) {
+	public void setMensaje(String m) {
 		mensaje = m;
 	}
 
-	public String obtenerMensaje() {
+	public String getMensaje() {
 		return mensaje;
 	}
 
-	public void establecerEmisor(String e) {
+	public void setEmisor(String e) {
 		emisor = e;
 	}
 
-	public String obtenerEmisor() {
+	public String getEmisor() {
 		return emisor;
 	}
 
-	public void establecerReceptor(String r) {
+	public void setReceptor(String r) {
 		receptor = r;
 	}
 
-	public String obtenerReceptor() {
+	public String getReceptor() {
 		return receptor;
 	}
 	
-	public int obtenerId() {
-		return ID;
+	public long getId() {
+		return id;
 	}
 
 	@Override
-	public int hashCode() {
-		try {
-			return ID;
-		} catch (Exception er) {
-			return 0;
-		}
+	public int hashCode() {		
+		return (int) id;
 	}
 	
 	@Override
@@ -65,7 +65,7 @@ public class Mensaje {
 		
 		if(o instanceof Mensaje) {
 			Mensaje m = (Mensaje) o;
-			res = m.obtenerId() == ID;
+			res = m.getId() == id;
 		}
 		
 		return res;
