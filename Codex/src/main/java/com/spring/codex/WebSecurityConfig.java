@@ -55,6 +55,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		// la contraseña es test (encriptada usando bcrypt)
 		// https://www.dailycred.com/article/bcrypt-calculator
 		user.setPassword("$2a$04$mhVuX7/zGzhPu7xKCrqY8e7M0RkORqZ4QB/4rCEgYQNddyt1mAKZK");
+		user.setNombre("Bright Falls");
 		user.setApellido1("Alan");
 		user.setApellido2("Wake");
 		user.setDNI("77665544A");
