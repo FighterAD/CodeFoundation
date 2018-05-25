@@ -32,6 +32,7 @@ public class LibroController {
         return new Autor();
     }
 
+
 	/*---Devuelve el template HTML de libros---*/
 	// petición recibida por get
 	@GetMapping("/libros")
@@ -76,7 +77,7 @@ public class LibroController {
 	@PostMapping("/libros/update")
 	public String update(@Valid Libro libro, Model model) {
 		try {
-			libroService.update(libro);
+			libroService.add(libro);
 			model.addAttribute("udpate", true);
 		} catch (Exception er) {
 			model.addAttribute("update", false);
