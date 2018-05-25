@@ -41,6 +41,7 @@ public class Usuario {
     
     public Usuario(Usuario usuario) {
     	this.DNI = usuario.DNI;
+    	this.nombre = usuario.nombre;
     	this.apellido1 = usuario.apellido1;
     	this.apellido2 = usuario.apellido2;
     	this.email = usuario.email;
