@@ -53,7 +53,7 @@
 								th:classappend="${#fields.hasErrors('autor')}? 'has-error'">
 								<label>Autor</label> <select th:field="*{autor}">
 									<option th:field="*{autor}" th:each="autor : ${autores}"
-										th:value="${autores.iD}" th:text="${autor.nombre} + ' ' + ${autor.apellido1} + ' ' +   ${autor.apellido2}"></option>
+										th:value="${autor.iD}" th:text="${autor.nombre} + ' ' + ${autor.apellido1} + ' ' +   ${autor.apellido2}"></option>
 								</select>
 							</div>
 						</div>

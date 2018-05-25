@@ -108,8 +108,9 @@ a:active {
     
 <div sec:authorize="isAuthenticated()">
     <div class ="topcorner">
+    	Hola, <b th:text="${#request.userPrincipal.principal.nombre}"></b>
         <a href="/libros">Consultar libros</a>
-        <a href="/autores">Consultar personas</a>
+        <a href="/autores">Consultar autores</a>
         <a href="/buscar">Buscar</a>
     </div>
 </div>

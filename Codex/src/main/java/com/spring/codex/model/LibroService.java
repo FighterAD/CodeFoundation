@@ -18,10 +18,10 @@ public class LibroService {
 
 	/*---Actualiza un libro---*/
 	public void update(Libro libro) {
-		Libro l = repository.getOne(libro.getIsbn13());
-		l.setEditor(libro.getEditor());
+		Libro l = repository.findByIsbn13(libro.getIsbn13());
 		l.setAutor(libro.getAutor());
 		l.setNombre(libro.getNombre());
+		System.out.println(libro.getAutor());
 		repository.saveAndFlush(l);
 	}
 
@@ -47,7 +47,6 @@ public class LibroService {
 	public void delete(long isbn13) {
 		repository.deleteById(isbn13);
 	}
-	
 
 
 }
