@@ -9,29 +9,31 @@ public class Mensaje {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
-	private String mensaje;
+	private String texto;
 	private String emisor;
 	private String receptor;
 
 	@OneToMany(cascade=CascadeType.ALL, fetch=FetchType.LAZY, mappedBy="mensaje")
 	public List<Usuario> usuarios;
-	
-	public Mensaje() {
-		this("", "", "");
-	}
 
+	public Mensaje() {
+		emisor = new String();
+		receptor = new String();
+		texto = new String();
+	}
+	
 	public Mensaje(String e, String r, String m) {
 		emisor = e;
 		receptor = r;
-		mensaje = m;
+		texto = m;
 	}
 
-	public void setMensaje(String m) {
-		mensaje = m;
+	public void settexto(String m) {
+		texto = m;
 	}
 
-	public String getMensaje() {
-		return mensaje;
+	public String gettexto() {
+		return texto;
 	}
 
 	public void setEmisor(String e) {
@@ -73,6 +75,6 @@ public class Mensaje {
 
 	@Override
 	public String toString() {
-		return "Emisor: " + emisor + "\nReceptor: " + receptor + "\nMensaje " + mensaje + "\n";
+		return "Emisor: " + emisor + "\nReceptor: " + receptor + "\ntexto " + texto + "\n";
 	}
 }
