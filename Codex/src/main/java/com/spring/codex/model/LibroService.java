@@ -39,9 +39,15 @@ public class LibroService {
 			repository.save(libro);
 		}	
 	}
+	
+	public List<Libro> busqueda(String busq){
+		return repository.searchWithJPQLQuery(busq);
+	}
 
 	public void delete(long isbn13) {
 		repository.deleteById(isbn13);
 	}
+	
+
 
 }
