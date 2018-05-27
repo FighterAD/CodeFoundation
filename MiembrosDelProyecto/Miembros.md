@@ -1,9 +1,5 @@
 # Miembros
 
-## Project Manager
-
-* Artem Pavlenko
-
 
 ## Project Managers
 
