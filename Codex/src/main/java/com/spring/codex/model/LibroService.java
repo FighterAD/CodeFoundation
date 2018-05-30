@@ -21,12 +21,13 @@ public class LibroService {
 		Libro l = repository.findByIsbn13(libro.getIsbn13());
 		l.setAutor(libro.getAutor());
 		l.setNombre(libro.getNombre());
-		System.out.println(libro.getAutor());
+		//System.out.println(libro.getAutor());
 		repository.saveAndFlush(l);
 	}
 
 	public Libro getByIsbn13(long isbn13) {
-		return repository.getOne(isbn13);
+		//return repository.getOne(isbn13);
+		return repository.findByIsbn13(isbn13);
 	}
 	
 	public Libro getByName(String name) {
