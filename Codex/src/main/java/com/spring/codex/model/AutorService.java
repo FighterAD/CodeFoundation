@@ -26,12 +26,12 @@ public class AutorService {
 	}
 	
 	public Autor getByNombreApellido1Apellido2(String nombre, String apellido1, String apellido2) {
-		return autorRepository.findByNombreAndApellido1AndApellido2(nombre,apellido1,apellido2);
+		return autorRepository.findByNombreIgnoreCaseAndApellido1IgnoreCaseAndApellido2IgnoreCase(nombre,apellido1,apellido2);
 	}
 
 	
 	public void add(Autor autor) {
-		Autor busqueda = autorRepository.findByNombreAndApellido1AndApellido2(autor.getNombre(), autor.getApellido1(), autor.getApellido2());
+		Autor busqueda = autorRepository.findByNombreIgnoreCaseAndApellido1IgnoreCaseAndApellido2IgnoreCase(autor.getNombre(), autor.getApellido1(), autor.getApellido2());
 		if (busqueda == null) {
 			autorRepository.save(autor);
 		}
