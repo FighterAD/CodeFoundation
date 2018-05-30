@@ -1,0 +1,55 @@
+	<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Busqueda</title>
+    
+<!-- jQuery library -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	rel="stylesheet"></link>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    
+<div class="center">
+    <form method="get" action="/busqueda">
+       <div class="small-3 columns">
+                <input type="text" id="txt" th:field="*{busqueda}"/>
+       </div>
+
+       <div class="small-5 columns end">
+          <button id="button-id" type="submit">Buscar</button>
+       </div>
+       
+       <div>
+       					<thead>
+						<tr>
+							<th>ISBN</th>
+							<th>Nombre</th>
+							<th>Autor</th>
+							<th>Operaciones</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr th:each="libro : ${libros}">
+							<td th:text="${libro.isbn13}"></td>
+							<td th:text="${libro.nombre}"></td>
+							<td th:text="${libro?.autor?.nombre} + ' ' + ${libro?.autor?.apellido1} + ' ' +   ${libro?.autor?.apellido2}"   ></td>
+                        </tr>
+            </tbody>
+       </div>
+
+    </form>
+
+</div>
+
+
+
+</body>
