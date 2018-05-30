@@ -21,8 +21,6 @@ import com.spring.codex.model.LibroService;
 public class LibroTests {
 
 	private static final long ISBN_TEST = 000;
-	private static final long ISBN_TEST2 =900;
-
 	@MockBean
 	LibroRepository libroRepository;
 
