@@ -12,24 +12,19 @@
 @font-face {
     font-family: 'NixieOne'; /*Nombre para ser referenciado*/
     src: url(https://fonts.gstatic.com/s/nixieone/v8/lW-8wjkKLXjg5y2o2uUYV-ty.woff2) format('woff2');
-
 }
-
 h1 {
     font-family: NixieOne;
     font-size: 60px
 }
-
 h2 {
     font-family: NixieOne;
     font-size: 30px
 }
-
 .container {
     padding: 70px 0;
     text-align: center;
 }
-
 .footer {
     position: fixed;
     left: 0;
@@ -39,15 +34,12 @@ h2 {
     color: black;
     text-align: center;
     font-family: NixieOne
-
 }
-
 .search {
   width: 543.026px;
   height: 37.9972px;
   margin: 30px auto;
 }
-
 .search input {
 background-image:url(https://i.imgur.com/gU6PlKZ.png);
 background-repeat: no-repeat;
@@ -68,37 +60,28 @@ border-radius:5px;
 /* For I.E */
 -moz-border-radius:5px
 /* For Mozilla Web Browser*/
-
 }
-
 .topcorner{
    position:absolute;
    top:0;
    right: 5px;
    font-family: NixieOne
   }
-
-
 a:link {
     color: black;
 }
-
 /* link visitado */
 a:visited {
     color: gray;
 }
-
 /* cursor sobre el enlance */
 a:hover {
     color: dimgray;
 }
-
 /* link seleccionado */
 a:active {
     color: black;
 }
-
-
 </style>
 <title>Codex </title>
 </head>
@@ -108,9 +91,9 @@ a:active {
     
 <div sec:authorize="isAuthenticated()">
     <div class ="topcorner">
-    	<div>Hola, <b th:text="${#request.userPrincipal.principal.nombre}"></b></div>
-        <a href="/libros">Consultar libros</a>
-        <a href="/autores">Consultar autores</a>
+        Hola, <b th:text="${#request.userPrincipal.principal.nombre}"></b>
+        <a href="/libros">Libros</a>
+        <a href="/autores">Autores</a>
         <a href="/buscar">Buscar</a>
         <a href="/enviar">Mensaje</a>
     </div>
@@ -120,7 +103,7 @@ a:active {
     <div class ="topcorner">
 		<a href="/login">Login</a>
 		<a href="/registro">Registro</a>
-		<a href="/enviar">Mensaje</a>
+		<!--<a href="/enviar">Mensaje</a>-->
     </div>
 </div>
     
@@ -175,4 +158,3 @@ a:active {
 
 </body>
 </html>
-

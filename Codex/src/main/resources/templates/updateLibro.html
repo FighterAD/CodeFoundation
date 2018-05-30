@@ -88,7 +88,6 @@ a:active {
     color: black;
 }
 </style>
-
 <title>Editar libro</title>
 <!-- jQuery library -->
 <script
@@ -102,13 +101,13 @@ a:active {
 <body>
 
 
-		<div class="leftcorner">
-	<h1>Codex</h1>
+    <div class="leftcorner">
+	   <h1>Codex</h1>
 	</div>
 
 	<div class="topcorner">
-		<div>Hola, <b th:text="${#request.userPrincipal.principal.nombre}"></b></div>
-        <a href="/autores">Consultar autores</a>
+        Hola, <b th:text="${#request.userPrincipal.principal.nombre}"></b>
+        <a href="/autores">Autores</a>
         <a href="/buscar">Buscar</a>
         <a href="/enviar">Mensaje</a>
 	</div>
@@ -119,7 +118,7 @@ a:active {
 			<strong>Editar Libro</strong>
 		</div>
 
-<div class="container">
+<!--<div class="container">-->
 		<div class="panel-body">
 			<form class="form-horizontal" action="#" th:object="${libro}"
 				th:action="@{/libros/update}" method="POST" style="margin: 10px">
@@ -170,7 +169,7 @@ a:active {
 				
 			</form>
 		</div>
-	</div>
+<!--</div>-->
 	    <div class="footer">
   			<p>Codex es un proyecto de CodeFoundation</p>
 		</div>		
