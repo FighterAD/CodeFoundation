@@ -91,9 +91,9 @@ a:active {
     
 <div sec:authorize="isAuthenticated()">
     <div class ="topcorner">
-    	<div>Hola, <b th:text="${#request.userPrincipal.principal.nombre}"></b></div>
-        <a href="/libros">Consultar libros</a>
-        <a href="/autores">Consultar autores</a>
+        Hola, <b th:text="${#request.userPrincipal.principal.nombre}"></b>
+        <a href="/libros">Libros</a>
+        <a href="/autores">Autores</a>
         <a href="/buscar">Buscar</a>
         <a href="/enviar">Mensaje</a>
     </div>
@@ -103,7 +103,7 @@ a:active {
     <div class ="topcorner">
 		<a href="/login">Login</a>
 		<a href="/registro">Registro</a>
-		<a href="/enviar">Mensaje</a>
+		<!--<a href="/enviar">Mensaje</a>-->
     </div>
 </div>
     
