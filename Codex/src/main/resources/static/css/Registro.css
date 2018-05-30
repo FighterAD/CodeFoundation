@@ -53,10 +53,8 @@ form {
     padding: 1em;
     border: 1px solid #CCC;
     border-radius: 1em;
-        background-color: lightgray;
-    -webkite-border.radius:25px;
-    -moz-border-radius:25px;
-    
+    background-color: lightgray;
+    -moz-border-radius: 25px;
 }
 
 form div + div {

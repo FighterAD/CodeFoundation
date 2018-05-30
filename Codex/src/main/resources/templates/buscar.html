@@ -1,7 +1,7 @@
 <!Doctype html>
 <html lang=es>
     <head>
-        <meta charset=="UTF-8">
+        <meta charset="UTF-8">
         <title>Buscar</title>
         <link rel="stylesheet" type="text/css" href="css/buscar.css">
     </head>
@@ -12,10 +12,10 @@
             <a href="/login">Login</a>
         </div>
         <div>
-            <form>
+            <form action="#" th:object="${libro}" method="POST">
                 <div>
-                    <label for="codex">Codex</label>
-                    <input type="search" id="codex"/>
+                    <label for="search">Codex</label>
+                    <input type="search" th:field="*{nombre}" id="search" value=""/>
                 </div>
             </form>
         </div>
@@ -25,16 +25,28 @@
             </div>
             <div class="columna2">
                 <div>
-                    <h1>Yerma</h1>
+                   <b th:text="${libro.nombre}"></b>
                 </div>
                 <div>
-                    <p>Yerma (1934) es una obra teatral popular escrita por Federico García Lorca que desarrolla una tragedia de ambiente rural. Está dividida en tres actos de dos cuadros cada uno. Es una de las tres obras de teatro que forman parte de la "trilogía lorquiana", junto con La casa de Bernarda Alba (1936) y Bodas de sangre. (1933).</p>
+                    <p>Descripcion</p>
                 </div>
                 <div>
-                    <p>==========================================================</p>
-                    <p>Autor</p>
-                    <p>Editor</p>
-                    <p>ISBN</p>
+                    <div>
+                        <b>Autor: </b>
+                        <span th:text="${libro.autor.nombre} + ' ' + ${libro.autor.apellido1} + ' ' + ${libro.autor.apellido2}"></span>
+                    </div>
+                    <div>
+                        <b>Editor: </b>
+                        <span th:text="${libro.editor}"></span>
+                    </div>
+                    <div>
+                        <b>Año: </b>
+                        <span th:text="${libro.anyo}"></span>
+                    </div>
+                    <div>
+                        <b>ISBN: </b>
+                        <span th:text="${libro.isbn13}"></span>
+                    </div>
                 </div>
             </div>
             <div class="columna3">
