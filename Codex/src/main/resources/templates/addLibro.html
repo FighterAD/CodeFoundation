@@ -5,90 +5,6 @@
 <meta charset="UTF-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width" />
-<style>
-@font-face {
-    font-family: 'NixieOne'; /*Nombre para ser referenciado*/
-    src: url(https://fonts.gstatic.com/s/nixieone/v8/lW-8wjkKLXjg5y2o2uUYV-ty.woff2) format('woff2');
-}
-h1 {
-    font-family: NixieOne;
-    font-size: 60px
-}
-h2 {
-    font-family: NixieOne;
-    font-size: 30px
-}
-.container {
-    padding: 70px 0;
-    text-align: center;
-}
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: lightgray;
-    color: black;
-    text-align: center;
-    font-family: NixieOne
-}
-.search {
-  width: 543.026px;
-  height: 37.9972px;
-  margin: 30px auto;
-}
-.search input {
-background-image:url(https://i.imgur.com/gU6PlKZ.png);
-background-repeat: no-repeat;
-background-position: -6px;
-border:1px solid #DADADA;
-margin-top:10px;
-padding-left:35px;
-width:550px;
-height:30px;
-font-size:14px;
-box-shadow:0 0 10px;
--webkit-box-shadow:0 0 10px;
-/* For I.E */
--moz-box-shadow:0 0 10px;
-/* For Mozilla Web Browser*/
-border-radius:5px;
--webkit-border-radius:5px;
-/* For I.E */
--moz-border-radius:5px
-/* For Mozilla Web Browser*/
-}
-
-.leftcorner{
-   position:relative;
-   top:0;
-   left: 5px;
-   font-family: NixieOne
-  }
-
-.topcorner{
-   position:absolute;
-   top:0;
-   right: 5px;
-   font-family: NixieOne
-  }
-a:link {
-    color: black;
-}
-/* link visitado */
-a:visited {
-    color: gray;
-}
-/* cursor sobre el enlance */
-a:hover {
-    color: dimgray;
-}
-/* link seleccionado */
-a:active {
-    color: black;
-}
-</style>
-
 <title>Nuevo Libro</title>
 <!-- jQuery library -->
 <script
@@ -99,27 +15,11 @@ a:active {
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-
 <body>
-    
-    <div class="leftcorner">
-		<h1>Codex</h1>
-	</div>
-
-	<div class="topcorner">
-        Hola, <b th:text="${#request.userPrincipal.principal.nombre}"></b>
-        <a href="/autores">Autores</a>
-        <a href="/buscar">Buscar</a>
-        <a href="/enviar">Mensaje</a>
-	</div>
-
-    
 	<div class="panel panel-default">
 		<div class="panel-heading">
 			<strong>Nuevo Libro</strong>
 		</div>
-        </div>
-
 		<div class="panel-body">
 			<form class="form-horizontal" action="#" th:object="${libro}"
 				th:action="@{/libros}" method="POST" style="margin: 10px">
@@ -157,15 +57,15 @@ a:active {
 								</select>
 							</div>
 						</div>
-                    </fieldset>
+						</div>
+					</fieldset>
 				</div>
-            
-            
 				<div class="form-group row">
-					<button type="submit" class="btn btn-sm btn-primary">Guardar</button>
-					<a th:href="@{/libros}" class="btn btn-sm btn-default">Cancelar</a>
+					<button type="submit" class="btn btn-sm btn-primary">Save</button>
+					<a th:href="@{/libros}" class="btn btn-sm btn-default">Cancel</a>
 				</div>
 			</form>
 		</div>
+	</div>
 </body>
 </html>

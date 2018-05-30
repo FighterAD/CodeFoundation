@@ -11,7 +11,6 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import com.spring.codex.model.Mensaje;
 import com.spring.codex.model.MensajeService;
-import com.spring.codex.model.Usuario;
 import com.spring.codex.model.UsuarioService;
 
 @Controller
