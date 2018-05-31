@@ -96,5 +96,12 @@ public class LibroController {
 		}
 		return listBookView(model);
 	}
+	
+	@GetMapping("/libros/mostrar/{isbn}")
+	public String muestraLibro(@PathVariable("isbn") Long isbn, Model model) {
+		model.addAttribute("libro", libroService.getByIsbn13(isbn));
+		model.addAttribute("autor", autorService.getAll());
+		return "buscar";
+	}
 
 }

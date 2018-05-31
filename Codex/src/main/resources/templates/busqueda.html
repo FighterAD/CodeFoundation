@@ -27,26 +27,20 @@
        <div class="small-5 columns end">
           <button id="button-id" type="submit">Buscar</button>
        </div>
-       
+     </form>
+      
        <div>
-       					<thead>
-						<tr>
-							<th>ISBN</th>
-							<th>Nombre</th>
-							<th>Autor</th>
-							<th>Operaciones</th>
-						</tr>
-					</thead>
+
 					<tbody>
 						<tr th:each="libro : ${libros}">
 							<td th:text="${libro.isbn13}"></td>
 							<td th:text="${libro.nombre}"></td>
 							<td th:text="${libro?.autor?.nombre} + ' ' + ${libro?.autor?.apellido1} + ' ' +   ${libro?.autor?.apellido2}"   ></td>
-                        </tr>
-            </tbody>
+							<td></td>
+						</tr>
+					</tbody>
        </div>
 
-    </form>
 
 </div>
 

@@ -159,6 +159,35 @@ a:active {
 
 							</div>                        
 						</div>
+                        
+                        <div class="form-group row">
+							<div class="col-md-4"
+								th:classappend="${#fields.hasErrors('editor')}? 'has-error'">
+								<label>Editor</label> <input type="text"
+									class="form-control input-sm" th:field="*{editor}"
+									autofocus="autofocus" placeholder="Editor" maxlength="200" />
+							</div>
+						</div>
+						
+						<div class="form-group row">
+							<div class="col-md-4"
+								th:classappend="${#fields.hasErrors('descripcion')}? 'has-error'">
+								<label>Descripcion</label> <input type="text"
+									class="form-control input-sm" th:field="*{descripcion}"
+									autofocus="autofocus" placeholder="Descripcion" maxlength="200" />
+							</div>
+						</div>
+						
+						
+						<div class="form-group row">
+							<div class="col-md-4"
+								th:classappend="${#fields.hasErrors('imagen')}? 'has-error'">
+								<label>Imagen</label> <input type="text"
+									class="form-control input-sm" th:field="*{imagen}"
+									autofocus="autofocus" placeholder="Imagen" maxlength="200" />
+							</div>
+						</div>
+						
 					</fieldset>
 				</div>
 
