@@ -21,6 +21,9 @@ public class LibroService {
 		Libro l = repository.findByIsbn13(libro.getIsbn13());
 		l.setAutor(libro.getAutor());
 		l.setNombre(libro.getNombre());
+		l.setImagen(libro.getImagen());
+		l.setDescripcion(libro.getDescripcion());
+		l.setEditor(l.getEditor());
 		//System.out.println(libro.getAutor());
 		repository.saveAndFlush(l);
 	}

@@ -17,6 +17,10 @@ public class Libro {
 	private Autor autor;
 
 	private String editor;
+	
+	private String imagen;
+	
+	private String descripcion;
 
 	public Libro() {
 
@@ -64,6 +68,22 @@ public class Libro {
 	
 	public int getAnyo() {
 		return anyo;
+	}
+
+	public String getImagen() {
+		return imagen;
+	}
+
+	public void setImagen(String imagen) {
+		this.imagen = imagen;
+	}
+
+	public String getDescripcion() {
+		return descripcion;
+	}
+
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
 	}
 
 	public void setAnyo(int anyo) {
