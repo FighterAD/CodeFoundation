@@ -51,6 +51,4 @@ public class LibroService {
 	public void delete(long isbn13) {
 		repository.deleteById(isbn13);
 	}
-
-
 }

@@ -72,21 +72,6 @@ border-radius:5px;
    right: 5px;
    font-family: NixieOne
   }
-a:link {
-    color: black;
-}
-/* link visitado */
-a:visited {
-    color: gray;
-}
-/* cursor sobre el enlance */
-a:hover {
-    color: dimgray;
-}
-/* link seleccionado */
-a:active {
-    color: black;
-}
 </style>
 <title>Libros</title>
 <!-- jQuery library -->
@@ -105,8 +90,8 @@ a:active {
 	</div>
 
 	<div class="topcorner">
-		<div>Hola, <b th:text="${#request.userPrincipal.principal.nombre}"></b></div>
-        <a href="/autores">Consultar autores</a>
+        Hola, <b th:text="${#request.userPrincipal.principal.nombre}"></b>
+        <a href="/autores">Autores</a>
         <a href="/buscar">Buscar</a>
         <a href="/enviar">Mensaje</a>
 	</div>
@@ -116,8 +101,9 @@ a:active {
 		<div class="panel-heading">
 			<strong>Libros</strong>
 	</div>
+    </div>
 
-<div class="container">
+<!--<div class="container">-->
 		<div class="panel-body">
 			<div class="table-responsive">
 				<table
@@ -183,13 +169,12 @@ a:active {
 			<a class="btn btn-sm btn-success" th:href="@{/libros/add/}">Nuevo
 				libro</a> <a class="btn btn-sm btn-primary" th:href="@{/}">Atrás</a>
 		</div>
-	</div>
+<!--</div>-->
 
 
 	    <div class="footer">
   			<p>Codex es un proyecto de CodeFoundation</p>
 		</div>		
 
-</div>
 </body>
 </html>

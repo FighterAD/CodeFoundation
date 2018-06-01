@@ -13,7 +13,7 @@ import com.spring.codex.model.Libro;
 import com.spring.codex.model.AutorService;
 import com.spring.codex.model.LibroService;
 
-@SpringBootApplication
+///@SpringBootApplication
 @EnableJpaAuditing
 
 public class DemoApplication {

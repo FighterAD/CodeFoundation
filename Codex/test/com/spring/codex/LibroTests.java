@@ -26,16 +26,15 @@ public class LibroTests {
 
 	@Autowired
 	public LibroService libroService;
-	
 
 	@Test
 	public void contextLoads() {
 		assertNotNull(libroService);
 	}
 	
+	
 	@Test
 	public void testUpdate() {
-		
 		Libro Libro1 = new Libro();
 		Libro1.setIsbn13(ISBN_TEST);
 		Libro1.setNombre("WILD");
@@ -77,6 +76,8 @@ public class LibroTests {
 		Libro resultLibro = libroService.getByName("WILD");
 		assertEquals(Libro1.getNombre(),resultLibro.getNombre());	
 	}
+	
+	
 	
 	
 	
