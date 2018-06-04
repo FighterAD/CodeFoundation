@@ -8,6 +8,16 @@
 <meta charset="UTF-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width" />
+<SCRIPT>
+function clickyClick() {
+    url = 'http://localhost:8080/busqueda/' + document.getElementById("comment").value
+        //window.open(url);
+    window.location.replace(url);
+}
+
+
+</SCRIPT>
+
 <style>
 @font-face {
     font-family: 'NixieOne'; /*Nombre para ser referenciado*/
@@ -61,6 +71,8 @@ border-radius:5px;
 -moz-border-radius:5px
 /* For Mozilla Web Browser*/
 }
+
+
 .topcorner{
    position:absolute;
    top:0;
@@ -120,11 +132,14 @@ a:active {
 	<br>
         
 <div class="search">
-    <input id="srchtxt" type="text" data-toggle="tooltip" title="Búsqueda">
-  </div>
+	 <form>
+		<input type="text" name="comments" id="comment">
+	</form>
+	<button id="myBtn" onclick="clickyClick()">📚</button>
+	
+ </div>
 
-    
-    
+ 
 	<div sec:authorize="isAuthenticated()">
 		<h2>Opciones</h2>
 		<div>
