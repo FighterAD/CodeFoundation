@@ -31,6 +31,12 @@ public class BusquedaController {
     	return new String();
     }
     
+	@GetMapping("/busqueda/")
+	public String busquedaVacia(@PathVariable("string") String string, Model model) {
+		return "error";
+	}
+
+    
 	@GetMapping("/busqueda/{string}")
 	public String muestraLibro(@PathVariable("string") String string, Model model) {
 		model.addAttribute("libros", libroService.busqueda(string));
