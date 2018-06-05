@@ -33,8 +33,11 @@ public class MensajeController {
 		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 	    m.setEmisor(auth.getName());
 	    
+	    m.setUsuarioEmisor(usuarioService.findByEmail(m.getEmisor()));
+	    m.setUsuarioReceptor(usuarioService.findByEmail(m.getReceptor()));
+	    
 		try {
-			if(usuarioService.findByEmail(m.getReceptor()) != null && !m.getReceptor().equals(auth.getName())) {
+			if(usuarioService.findByEmail(m.getReceptor()) != null) {
 				mensajeService.addMensaje(m);
 				model.addAttribute("create", true);				
 			}
