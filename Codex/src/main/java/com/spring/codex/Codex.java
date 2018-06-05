@@ -14,7 +14,7 @@ import com.spring.codex.model.AutorService;
 import com.spring.codex.model.LibroService;
 
 @SpringBootApplication
-@EnableJpaAuditing
+//@EnableJpaAuditing
 
 public class Codex {
 
@@ -41,7 +41,12 @@ public class Codex {
 			autorService.add(una);
 
 			Libro libro1 = new Libro(12312l, "Yerma", 1934, fede, "Austral");
+			libro1.setImagen("https://cloud10.todocoleccion.online/libros-antiguos/fot/2008/08/22/9674851.jpg");
+			libro1.setDescripcion("Como repetidamente declaró Federico García Lorca, \"Yerma\" es una tragedia con un solo tema (la mujer estéril) y un carácter en progresivo desarrollo. A través del largo tiempo dramático, Yerma lucha desesperadamente con su verdad");
 			Libro libro2 = new Libro(1122l, "Niebla	", 1907, una, "Alianza");
+			libro2.setDescripcion("Esta obra de Miguel de Unamuno es uno de los ejemplos clásicos más eminentes de la novela moderna. La ficción deja aquí de ser un puro vehículo narrativo, transmisor de historias, para convertirse en un universo textual de fecundas sugerencias.\n" + 
+					"");
+			libro2.setImagen("http://www.elcotidiano.es/wp-content/uploads/2014/08/NIEBLA.png");
 			libroService.add(libro1);
 			libroService.add(libro2);
 
