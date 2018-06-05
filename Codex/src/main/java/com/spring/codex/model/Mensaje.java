@@ -1,20 +1,28 @@
 package com.spring.codex.model;
 
-import java.util.List;
-
 import javax.persistence.*;
 
 @Entity
+@Table(name="MENSAJE")
 public class Mensaje {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	private String texto;
+	
+	@Column(name="CORREO_EMISOR")
 	private String emisor;
+	
+	@Column(name="CORREO_RECEPTOR")
 	private String receptor;
 
-	@OneToMany(cascade=CascadeType.ALL, fetch=FetchType.LAZY, mappedBy="mensaje")
-	public List<Usuario> usuarios;
+    @ManyToOne(fetch=FetchType.LAZY)
+    @JoinColumn(name="USUARIO_RECEPTOR_ID")
+    private Usuario usuarioReceptor;
+    
+    @ManyToOne(fetch=FetchType.LAZY)
+    @JoinColumn(name="USUARIO_EMISOR_ID")
+    private Usuario usuarioEmisor;
 
 	public Mensaje() {
 		emisor = new String();
@@ -54,6 +62,22 @@ public class Mensaje {
 	
 	public long getId() {
 		return id;
+	}
+
+	public Usuario getUsuarioReceptor() {
+		return usuarioReceptor;
+	}
+
+	public void setUsuarioReceptor(Usuario usuarioReceptor) {
+		this.usuarioReceptor = usuarioReceptor;
+	}
+
+	public Usuario getUsuarioEmisor() {
+		return usuarioEmisor;
+	}
+
+	public void setUsuarioEmisor(Usuario usuarioEmisor) {
+		this.usuarioEmisor = usuarioEmisor;
 	}
 
 	@Override
