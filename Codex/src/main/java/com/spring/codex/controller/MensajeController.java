@@ -42,7 +42,6 @@ public class MensajeController {
 				model.addAttribute("create", true);				
 			}
 		} catch (Exception er) {
-			System.out.println("Mensaje no creado\n");
 			model.addAttribute("create", false);
 		}
 
