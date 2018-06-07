@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<style>
+@font-face {
+    font-family: 'NixieOne'; /*Nombre para ser referenciado*/
+    src: url(https://fonts.gstatic.com/s/nixieone/v8/lW-8wjkKLXjg5y2o2uUYV-ty.woff2) format('woff2');
+}
+h1 {
+    font-family: NixieOne;
+    font-size: 60px
+}
+h2 {
+    font-family: NixieOne;
+    font-size: 30px
+}
+.container {
+    padding: 70px 0;
+    text-align: center;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+    font-family: NixieOne
+}
+.search {
+  width: 543.026px;
+  height: 37.9972px;
+  margin: 30px auto;
+}
+.search input {
+background-image:url(https://i.imgur.com/gU6PlKZ.png);
+background-repeat: no-repeat;
+background-position: -6px;
+border:1px solid #DADADA;
+margin-top:10px;
+padding-left:35px;
+width:550px;
+height:30px;
+font-size:14px;
+box-shadow:0 0 10px;
+-webkit-box-shadow:0 0 10px;
+/* For I.E */
+-moz-box-shadow:0 0 10px;
+/* For Mozilla Web Browser*/
+border-radius:5px;
+-webkit-border-radius:5px;
+/* For I.E */
+-moz-border-radius:5px
+/* For Mozilla Web Browser*/
+}
+
+.leftcorner{
+   position:relative;
+   top:0;
+   left: 5px;
+   font-family: NixieOne
+  }
+
+.topcorner{
+   position:absolute;
+   top:0;
+   right: 5px;
+   font-family: NixieOne
+  }
+</style>
+<title>Autores</title>
+<!-- jQuery library -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	rel="stylesheet"></link>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+
+
+<body>
+    
+   	<div class="leftcorner">
+		<h1>Codex</h1>
+	</div>
+
+	<div class="topcorner">
+        Hola, <b th:text="${#request.userPrincipal.principal.nombre}"></b>
+        <a href="/libros">Libros</a>
+        <a href="/buscar">Buscar</a>
+        <a href="/enviar">Mensaje</a>
+	</div>
+
+    
+    
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<strong>Prestamos</strong>
+		</div>
+		<div class="panel-body">
+			<div class="table-responsive">
+				<table
+					class="table table-sm table-striped table-hover table-bordered">
+					<thead>
+						<tr>
+							<th>Prestado</th>
+							<th>Fecha Prestamo</th>
+							<th>Fecha Devolucion</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr th:each="prestamo : ${prestamos}">
+							<td th:text="${prestamo.prestatario}"></td>
+							<td th:text="${prestamo.fecha_prestamo}"></td>
+							<td th:text="${prestamo.fecha_devolucion}"></td>
+							<td>
+								<div class="btn-group">
+
+									<form action="#" id="deleteForm" th:method="delete"
+										th:action="@{/prestamos/{id}(id=${prestamo.id})}">
+										<input type="submit" class="delete btn btn-sm btn-danger"
+											value="Eliminar" />
+									</form>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div th:if="${delete != null && delete}" class="alert alert-success">
+			<strong>OK!</strong> El autor ha sido eliminado correctamente.
+		</div>
+		<div th:if="${delete != null && !delete}" class="alert alert-danger">
+			<strong>Error!</strong> Error eliminando el autor.
+		</div>
+		<div th:if="${create != null && create}" class="alert alert-success">
+			<strong>OK!</strong> El autor ha sido creado correctamente.
+		</div>
+		<div th:if="${create != null && !create}" class="alert alert-danger">
+			<strong>Error!</strong> Error al crear el autor.
+		</div>
+		<div class="panel-footer">
+			<a class="btn btn-sm btn-success" th:href="@{/prestamos/add}">Nuevo prestamo</a> 
+			<a class="btn btn-sm btn-primary" th:href="@{/}">Atrás</a>
+		</div>
+	</div>
+    
+    	    <div class="footer">
+  			<p>Codex es un proyecto de CodeFoundation</p>
+		</div>		
+    
+</body>
+</html>
