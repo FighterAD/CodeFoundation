@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import com.spring.codex.model.Libro;
 import com.spring.codex.model.LibroService;
+import com.spring.codex.model.UsuarioService;
 import com.spring.codex.model.AutorService;
 import com.spring.codex.model.Autor;
 
@@ -26,6 +27,9 @@ public class LibroController {
 
 	@Autowired
 	AutorService autorService;
+	
+	@Autowired
+	UsuarioService usuarioService;
 	
     @ModelAttribute("autor")
     public Autor Autor() {
@@ -101,7 +105,21 @@ public class LibroController {
 	public String muestraLibro(@PathVariable("isbn") Long isbn, Model model) {
 		model.addAttribute("libro", libroService.getByIsbn13(isbn));
 		model.addAttribute("autor", autorService.getAll());
+		model.addAttribute("poseedores", libroService.poseedores(libroService.getByIsbn13(isbn)));
 		return "buscar";
 	}
+	
+	@GetMapping("/libros/anyade/{isbn}/{correo}")
+	public String muestra(@PathVariable("isbn") Long isbn, @PathVariable("correo") String correo, Model model) {
+		model.addAttribute("libro", libroService.getByIsbn13(isbn));
+		model.addAttribute("autor", autorService.getAll());
+		model.addAttribute("poseedores", libroService.poseedores(libroService.getByIsbn13(isbn)));
+		libroService.anyadePoseedor(libroService.getByIsbn13(isbn), usuarioService.findByEmail(correo));
+		return "anyadido";
+	}
+
+	
+
+	
 
 }

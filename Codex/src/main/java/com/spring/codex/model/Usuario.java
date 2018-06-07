@@ -35,7 +35,18 @@ public class Usuario {
     //@Size(min=5, max=5)
     private int codigoPostal;
     
-    public Usuario() {
+
+    
+    public Mensaje getMensaje() {
+		return mensaje;
+	}
+
+	public void setMensaje(Mensaje mensaje) {
+		this.mensaje = mensaje;
+	}
+
+
+	public Usuario() {
     	
     }
     
@@ -125,10 +136,8 @@ public class Usuario {
     
     @Override
     public int hashCode() {
-    	String str = DNI.replaceAll("\\D+","");
-    	Integer.parseInt(str);
 		try {
-			return Integer.parseInt(str);
+			return DNI.hashCode();
 		} catch (Exception er) {
 			return 0;
 		}

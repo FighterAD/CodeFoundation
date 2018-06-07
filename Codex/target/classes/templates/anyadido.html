@@ -72,23 +72,8 @@ border-radius:5px;
    right: 5px;
    font-family: NixieOne
   }
-a:link {
-    color: black;
-}
-/* link visitado */
-a:visited {
-    color: gray;
-}
-/* cursor sobre el enlance */
-a:hover {
-    color: dimgray;
-}
-/* link seleccionado */
-a:active {
-    color: black;
-}
 </style>
-<title>Enviar Mensaje</title>
+<title>Libros</title>
 <!-- jQuery library -->
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -98,14 +83,10 @@ a:active {
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<style>
-	textarea.form-control{
-		height: 200px;
-	}
-</style>
 <body>
-    <div class="leftcorner">
-		<h1>Codex</h1>
+
+	<div class="leftcorner">
+	<h1>Codex</h1>
 	</div>
 
 	<div class="topcorner">
@@ -116,50 +97,19 @@ a:active {
 	</div>
 
 
+<div class="container">
+    <h1>Ahora estás prestando el libro <span th:text="${libro.nombre}"></span>, de  <span th:text="${libro?.autor.nombre} + ' ' + ${libro?.autor.apellido1} + ' ' + ${libro?.autor.apellido2}"></span></h1>
+    <p></p>
+    <h2>¡Muchas gracias! :)</h2>
+     <img th:src=${libro.imagen} height="300" width="200">
+</div>
 
 
-	<div class="panel panel-default">
-		<div class="panel-heading">
-			<strong>Enviar Mensaje</strong>
-		</div>
-		<div class="panel-body">
-			<form class="form-horizontal" action="#" th:object="${mensaje}" method="POST" style="margin: 10px">
-				<div class="form-group">
-					<fieldset>
-						<div class="form-group row">
-							<div class="col-md-4">
-								<label>De: </label> <b th:text="${#request.userPrincipal.principal.email}"
-									class="form-control input-sm"
-									autofocus="autofocus" placeholder="Destinatario" maxlength="50" />
-							</div>
-						</div>
-						<div class="form-group row">
-							<div class="col-md-4">
-								<label>Para: </label> <b type="text" th:text="${destinatario.email}"
-									class="form-control input-sm"
-									autofocus="autofocus" placeholder="Destinatario" maxlength="50" />
-							</div>
-						</div>
-						<div class="form-group row">
-							<div class="col-md-4">
-								<label>Mensaje</label> <textarea th:field="*{texto}" class="form-control"></textarea>
-							</div>
-						</div>
-					</fieldset>
-				</div>
-				<div class="form-group row">
-					<button type="submit" class="btn btn-sm btn-primary">Enviar</button>
-					<a th:href="@{/}" class="btn btn-sm btn-default">Cancelar</a>
-				</div>
-			</form>
-		</div>
-	</div>
-	
-	
-	    	    <div class="footer">
+
+
+	    <div class="footer">
   			<p>Codex es un proyecto de CodeFoundation</p>
 		</div>		
-	
-	
+
 </body>
 </html>

@@ -47,8 +47,9 @@ public class PrestamoController {
 		
 		return listPrestamosView(model);
 	}
+	
 
-	@DeleteMapping("/prestamo/{id}")
+	@DeleteMapping("/prestamos/{id}")
 	public String delete(@PathVariable("id") long id, Model model) {
 		System.out.println("Intentando borrar");
 		try {
@@ -57,6 +58,7 @@ public class PrestamoController {
 		} catch (Exception er) {
 			model.addAttribute("delete", false);
 		}
-		return listPrestamosView(model);
+		//return listPrestamosView(model);
+		return "prestamos";
 	}
 }

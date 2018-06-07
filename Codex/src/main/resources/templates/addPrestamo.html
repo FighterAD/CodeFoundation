@@ -72,8 +72,24 @@ border-radius:5px;
    right: 5px;
    font-family: NixieOne
   }
+a:link {
+    color: black;
+}
+/* link visitado */
+a:visited {
+    color: gray;
+}
+/* cursor sobre el enlance */
+a:hover {
+    color: dimgray;
+}
+/* link seleccionado */
+a:active {
+    color: black;
+}
 </style>
-<title>Autores</title>
+
+<title>Nueva Persona</title>
 <!-- jQuery library -->
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -84,11 +100,9 @@ border-radius:5px;
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
-
-
 <body>
     
-   	<div class="leftcorner">
+    <div class="leftcorner">
 		<h1>Codex</h1>
 	</div>
 
@@ -100,57 +114,43 @@ border-radius:5px;
 	</div>
 
     
-    
 	<div class="panel panel-default">
 		<div class="panel-heading">
-			<strong>Prestamos</strong>
+			<strong>Nuevo Autor</strong>
 		</div>
 		<div class="panel-body">
-			<div class="table-responsive">
-				<table
-					class="table table-sm table-striped table-hover table-bordered">
-					<thead>
-						<tr>
-							<th>Prestado</th>
-							<th>Fecha Prestamo</th>
-							<th>Fecha Devolucion</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr th:each="prestamo : ${prestamos}">
-							<td th:text="${prestamo.prestatario}"></td>
-							<td th:text="${prestamo.fecha_prestamo}"></td>
-							<td th:text="${prestamo.fecha_devolucion}"></td>
-							<td>
-								<div class="btn-group">
+			<form class="form-horizontal" action="#" th:object="${prestamo}" method="POST" style="margin: 10px">
+				<div class="form-group">
+					<fieldset>
+						<div class="form-group row">
+							<div class="col-md-4">
+								<label>Prestar a</label> <input type="text"
+									class="form-control input-sm" th:field="*{prestatario}"
+									autofocus="autofocus" placeholder="email" maxlength="50" />
+							</div>
+						</div>
+						<div class="form-group row">
+							<div class="col-md-4">
+								<label>Fecha prestao</label> <input type="date"
+									class="form-control input-sm" th:field="*{fecha_prestamo}"
+									autofocus="autofocus" maxlength="50" />
+							</div>
+						</div>
 
-									<form action="#" id="deleteForm" th:method="delete"
-										th:action="@{/prestamos/{id}(id=${prestamo.id})}">
-										<input type="submit" class="delete btn btn-sm btn-danger"
-											value="Eliminar" />
-									</form>
-								</div>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-		</div>
-		<div th:if="${delete != null && delete}" class="alert alert-success">
-			<strong>OK!</strong> El autor ha sido eliminado correctamente.
-		</div>
-		<div th:if="${delete != null && !delete}" class="alert alert-danger">
-			<strong>Error!</strong> Error eliminando el autor.
-		</div>
-		<div th:if="${create != null && create}" class="alert alert-success">
-			<strong>OK!</strong> El autor ha sido creado correctamente.
-		</div>
-		<div th:if="${create != null && !create}" class="alert alert-danger">
-			<strong>Error!</strong> Error al crear el autor.
-		</div>
-		<div class="panel-footer">
-			<a class="btn btn-sm btn-success" th:href="@{/prestamos/add}">Nuevo prestamo</a> 
-			<a class="btn btn-sm btn-primary" th:href="@{/}">Atrás</a>
+						<div class="form-group row">
+							<div class="col-md-4">
+								<label>Fecha devolucion</label> <input type="date"
+									class="form-control input-sm" th:field="*{fecha_devolucion}"
+									autofocus="autofocus" maxlength="15" />
+							</div>
+						</div>
+					</fieldset>
+				</div>
+				<div class="form-group row">
+					<button type="submit" class="btn btn-sm btn-primary">Guardar</button>
+					<a th:href="@{/prestamos}" class="btn btn-sm btn-default">Cancelar</a>
+				</div>
+			</form>
 		</div>
 	</div>
     

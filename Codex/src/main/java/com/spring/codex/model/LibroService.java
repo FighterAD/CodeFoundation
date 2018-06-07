@@ -1,5 +1,7 @@
 package com.spring.codex.model;
 
+
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,8 +25,9 @@ public class LibroService {
 		l.setNombre(libro.getNombre());
 		l.setImagen(libro.getImagen());
 		l.setDescripcion(libro.getDescripcion());
-		l.setEditor(l.getEditor());
+		l.setEditor(libro.getEditor());
 		//System.out.println(libro.getAutor());
+		l.setPoseedores(libro.getPoseedores());
 		repository.saveAndFlush(l);
 	}
 
@@ -51,4 +54,18 @@ public class LibroService {
 	public void delete(long isbn13) {
 		repository.deleteById(isbn13);
 	}
+	
+	public void anyadePoseedor(Libro libro, Usuario usuario) {
+		List<Usuario> nueva = new ArrayList<>(libro.getPoseedores());
+		if (!libro.getPoseedores().contains(usuario)) {
+			nueva.add(usuario);
+			libro.setPoseedores(nueva);
+			repository.save(libro);	
+		}
+	}
+	
+	public List<Usuario> poseedores(Libro libro){
+		return libro.getPoseedores();
+	}
+	
 }

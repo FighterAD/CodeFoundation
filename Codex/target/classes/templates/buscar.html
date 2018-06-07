@@ -3,12 +3,15 @@
 <head>
         <meta charset="UTF-8">
         <title>Buscar</title>
-        <link rel="stylesheet" type="text/css" href="css/buscar.css">
     
 <style>
 @font-face {
     font-family: 'NixieOne'; /*Nombre para ser referenciado*/
-    src: url('NixieOne.ttf'); /*URL a la fuente*/
+    src: url(https://fonts.gstatic.com/s/nixieone/v8/lW-8wjkKLXjg5y2o2uUYV-ty.woff2) format('woff2');
+}
+
+h3 {
+font-family: NixieOne;
 }
 
 .enlaces {
@@ -58,6 +61,7 @@
 .columna2 p {
     text-align: left;
     font-size: 1.25em;
+    font-family:NixieOne
 }
 
 .columna3{
@@ -80,6 +84,7 @@ h1 {
     font-size: 4em;
     text-align: center;
     font-family: NixieOne
+    
 }
 
 form {
@@ -96,7 +101,11 @@ label {
     width: 300px;
     text-align: right;
     font-size: 6em;
+    font-family: NixieOne
 }
+
+b{
+font-family:NixieOne}
 
 input {
     font: 2em sans-serif;
@@ -104,6 +113,7 @@ input {
     width: 500px;
     margin-left: .5em;
     transform: translateY(-10px);
+    font-family:NixieOne
 }
 </style>
     
@@ -111,11 +121,27 @@ input {
     
 </head>
     <body>
-        <div class="topcorner">
-            <a href="/">Index</a>
-            <a href="/registro">Registro</a>
-            <a href="/login">Login</a>
-        </div>
+    
+<div sec:authorize="isAuthenticated()">
+    <div class ="topcorner">
+        Hola, <b th:text="${#request.userPrincipal.principal.nombre}"></b>
+        <a href="/libros">Libros</a>
+        <a href="/autores">Autores</a>
+       <!-- <a href="/buscar">Buscar</a> --> 
+       <!--<a href="/enviar">Mensaje</a>--> 
+    </div>
+</div>
+    
+<div sec:authorize="isAnonymous()">
+    <div class ="topcorner">
+		<a href="/login">Login</a>
+		<a href="/registro">Registro</a>
+		<!--<a href="/enviar">Mensaje</a>-->
+    </div>
+</div>
+        
+        
+        
         <div>
             <form action="#" th:object="${libro}" method="POST">
                 <div>
@@ -130,14 +156,17 @@ input {
             </div>
             <div class="columna2">
                 <div>
-                   <b th:text="${libro.nombre}"></b>
+                   <p><b th:text="${libro.nombre}"></b><p>
                 </div>
                 <div>
                     <p>Descripcion</p>
                     <span th:text="${libro.descripcion}"></span>
                 </div>
+                
                 <div>
                     <div>
+                    	<p></p>
+                    	<p></p>
                         <b>Autor: </b>
                         <span th:text="${libro.autor.nombre} + ' ' + ${libro.autor.apellido1} + ' ' + ${libro.autor.apellido2}"></span>
                     </div>
@@ -155,6 +184,9 @@ input {
                     </div>
                 </div>
             </div>
+            
+<!--  
+
             <div class="columna3">
                 <div>
                     <h3>Usuarios que prestan el libro</h3>
@@ -167,6 +199,37 @@ input {
                     <p>Usuario5</p>
                 </div>
             </div>
+
+-->            
+            <div class="columna3">
+                <div>
+                    <h3>Usuarios que prestan el libro</h3>
+                </div>
+<div sec:authorize="isAuthenticated()">
+			<tr th:each="poseedor : ${poseedores}">
+				<p>
+				<a th:href="${'/enviar/' + {poseedor.email}}"><td th:text="${poseedor.nombre}"></td></a>
+				</p>
+			</tr>
+			
+			<!--
+			
+			<a th:href="${'/libros/anyade/' + {libro.isbn13} + '/' + {#request.userPrincipal.principal.email}}" th:if="${not#lists.contains(${posedores},${#request.userPrincipal.principal.email})">Poseo este libro</a>
+			
+			  -->
+			  
+		<a th:href="${'/libros/anyade/' + {libro.isbn13} + '/' + {#request.userPrincipal.principal.email}}">Poseo este libro</a>
+</div>
+<div sec:authorize="isAnonymous()">
+¡Únete a Codex para verlo!
+</div>
+			
+             </div>
+            
+            
         </div>
+
+        
+        
     </body>
 </html>

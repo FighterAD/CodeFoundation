@@ -89,12 +89,23 @@ border-radius:5px;
 	<h1>Codex</h1>
 	</div>
 
-	<div class="topcorner">
+<div sec:authorize="isAuthenticated()">
+    <div class ="topcorner">
         Hola, <b th:text="${#request.userPrincipal.principal.nombre}"></b>
+        <a href="/libros">Libros</a>
         <a href="/autores">Autores</a>
         <a href="/buscar">Buscar</a>
         <a href="/enviar">Mensaje</a>
-	</div>
+    </div>
+</div>
+    
+<div sec:authorize="isAnonymous()">
+    <div class ="topcorner">
+		<a href="/login">Login</a>
+		<a href="/registro">Registro</a>
+		<!--<a href="/enviar">Mensaje</a>-->
+    </div>
+</div>
 
 
 	<div class="panel panel-default">

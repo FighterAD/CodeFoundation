@@ -1,5 +1,8 @@
 package com.spring.codex.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.*;
 
 @Entity
@@ -21,6 +24,17 @@ public class Libro {
 	private String imagen;
 	
 	private String descripcion;
+	
+	@ManyToMany(fetch=FetchType.EAGER)
+	private List<Usuario> poseedores;
+	
+	public List<Usuario> getPoseedores() {
+		return poseedores;
+	}
+
+	public void setPoseedores(List<Usuario> poseedores) {
+		this.poseedores = poseedores;
+	}
 
 	public Libro() {
 
@@ -32,6 +46,7 @@ public class Libro {
 		this.autor = autor;
 		this.editor = editor;
 		this.isbn13 = isbn13;
+		this.poseedores = new ArrayList<>();
 	}
 
 	public String getEditor() {
@@ -88,6 +103,10 @@ public class Libro {
 
 	public void setAnyo(int anyo) {
 		this.anyo = anyo;
+	}
+	
+	public void anyadePoseedor(Usuario usuario) {
+		this.getPoseedores().add(usuario);
 	}
 
 	public int hashCode() {
