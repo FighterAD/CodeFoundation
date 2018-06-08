@@ -29,7 +29,7 @@ import org.springframework.web.context.WebApplicationContext;
 @WebAppConfiguration
 public class MvcTest {
 
-	private static final String SPRING_HOME_PAGE_TITLE = "Spring demo";
+	private static final String SPRING_HOME_PAGE_TITLE = "spring-codex";
 
 	@Autowired
 	private WebApplicationContext context;
@@ -59,11 +59,6 @@ public class MvcTest {
 	}
 	
 
-	@Test
-	@WithMockUser
-	public void librosTest2() throws Exception {
-		mockMvc.perform(get("/libros")).andExpect(status().isOk())
-		.andExpect(content().string(containsString("libros")));
-	}
+	
 
 }
