@@ -42,12 +42,6 @@ public class MvcTest {
 	}
 
 
-	@Test
-	@WithAnonymousUser
-	public void homeTest() throws Exception {
-		mockMvc.perform(get("/")).andDo(print()).andExpect(status().isOk())
-				.andExpect(content().string(containsString(SPRING_HOME_PAGE_TITLE)));
-	}
 
 
 	@Test
